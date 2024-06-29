@@ -19,6 +19,7 @@
             align-items: center;
             padding: 20px;
             background-color: rgba(0,0,0,0.1);
+            flex-wrap: wrap;
         }
 
         .logo {
@@ -35,6 +36,7 @@
             display: flex;
             flex-grow: 1;
             justify-content: center;
+            flex-wrap: wrap;
         }
         
         nav a {
@@ -51,6 +53,7 @@
             border-radius: 5px;
             cursor: pointer;
             margin-left: auto;
+            flex-shrink: 0;
         }
         
         .hero {
@@ -58,22 +61,18 @@
             justify-content: space-between;
             align-items: center;
             padding: 50px;
+            flex-wrap: wrap;
+        }
+        
+        .hero-content, .hero-image {
+            width: 100%;
+            text-align: center;
         }
         
         .hero-content {
-            width: 50%;
-        }
-        
-        h1 {
-            font-size: 48px;
             margin-bottom: 20px;
         }
-        
-        .hero-image {
-            width: 40%;
-            text-align: right;
-        }
-        
+
         .hero-image img {
             max-width: 100%;
         }
@@ -83,14 +82,23 @@
             justify-content: space-between;
             align-items: center;
             padding: 50px;
+            flex-wrap: wrap;
         }
         
-        .secondary-image {
-            width: 40%;
+        .secondary-image, .secondary-content {
+            width: 100%;
+            text-align: center;
         }
-        
-        .secondary-content {
-            width: 50%;
+
+        @media(min-width: 768px) {
+            .hero-content, .hero-image {
+                width: 50%;
+                text-align: left;
+            }
+            .secondary-image, .secondary-content {
+                width: 50%;
+                text-align: left;
+            }
         }
     </style>
 </head>
