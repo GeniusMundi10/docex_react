@@ -27,83 +27,65 @@
         }
 
         .logo img {
-            width: 40px;
-            height: 40px;
+            width: 50px; /* Adjusted for better visibility */
+            height: auto;
             margin-right: 10px;
         }
 
         nav {
             display: flex;
+            justify-content: space-around;
             align-items: center;
+            width: 100%; /* Ensures nav occupies the rest of header space */
         }
 
-        nav a {
+        nav a, .cta-button {
             color: white;
             text-decoration: none;
-            margin-left: 20px;
+            padding: 0.5em 1em;
+            margin: 0 0.5em;
         }
         
         .cta-button {
             background-color: #7b2cbf;
-            color: white;
             border: none;
             padding: 10px 20px;
             border-radius: 5px;
             cursor: pointer;
-            margin-left: 20px;
+            white-space: nowrap;
         }
 
         .hero, .secondary-section {
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 50px 20px;
+            padding: 2em;
             text-align: center;
         }
 
         .hero-content, .secondary-content {
-            max-width: 600px;
+            max-width: 90%;
         }
 
-        .hero h1 {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-
-        .cta-buttons {
-            margin-top: 20px;
-        }
-
-        .cta-buttons button {
-            margin: 5px;
-        }
-
-        .secondary-section img {
-            max-width: 100%;
+        .hero img, .secondary-section img {
+            width: 100%;
             height: auto;
             margin-top: 20px;
         }
-
+        
         @media (min-width: 768px) {
             .hero, .secondary-section {
                 flex-direction: row;
                 justify-content: space-between;
                 text-align: left;
             }
-
+        
             .hero img, .secondary-section img {
-                width: 45%;
-                margin-top: 0;
-            }
-
-            .hero-content, .secondary-content {
                 width: 50%;
             }
-        }
-
-        @media (max-width: 768px) {
-            .hero img, .secondary-section img {
-                margin-top: 20px;
+        
+            .hero-content, .secondary-content {
+                width: 45%;
             }
         }
     </style>
