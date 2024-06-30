@@ -74,18 +74,39 @@
         }
         
         @media (min-width: 768px) {
-            .hero, .secondary-section, .outcome-section {
+            .hero, .secondary-section {
                 flex-direction: row;
                 justify-content: space-between;
                 text-align: left;
             }
         
-            .hero img, .secondary-section img, .outcome-graph img {
+            .hero img, .secondary-section img {
                 width: 50%;
             }
         
-            .hero-content, .secondary-content, .outcome-content {
+            .hero-content, .secondary-content {
                 width: 45%;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            header nav {
+                flex-direction: column;
+            }
+        
+            .logo img, nav a, .cta-button {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+        
+            .hero img, .secondary-section img {
+                width: 100%; /* Ensures images take full width of the screen on smaller devices */
+                height: auto;
+            }
+        
+            .hero-content, .secondary-content {
+                width: 100%; /* Allows text blocks to fill the device width on smaller screens */
             }
         }
     </style>
