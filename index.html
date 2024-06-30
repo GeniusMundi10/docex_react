@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Document Processing</title>
     <style>
-        body {
+       body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -22,8 +22,6 @@
         }
 
         .logo {
-            font-size: 24px;
-            font-weight: bold;
             display: flex;
             align-items: center;
         }
@@ -36,7 +34,6 @@
 
         nav {
             display: flex;
-            flex-wrap: wrap;
             align-items: center;
         }
 
@@ -44,8 +41,6 @@
             color: white;
             text-decoration: none;
             margin-left: 20px;
-            margin-top: 10px;
-            margin-bottom: 10px;
         }
         
         .cta-button {
@@ -58,7 +53,7 @@
             margin-left: 20px;
         }
 
-        .hero {
+        .hero, .secondary-section {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -66,7 +61,7 @@
             text-align: center;
         }
 
-        .hero-content {
+        .hero-content, .secondary-content {
             max-width: 600px;
         }
 
@@ -75,26 +70,12 @@
             margin-bottom: 20px;
         }
 
-        .hero img {
-            max-width: 100%;
-            height: auto;
-            margin-top: 20px;
-        }
-
         .cta-buttons {
             margin-top: 20px;
         }
 
         .cta-buttons button {
             margin: 5px;
-        }
-
-        .secondary-section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 50px 20px;
-            text-align: center;
         }
 
         .secondary-section img {
@@ -111,12 +92,12 @@
             }
 
             .hero img, .secondary-section img {
-                width: 50%;
+                width: 45%;
                 margin-top: 0;
             }
 
             .hero-content, .secondary-content {
-                width: 45%;
+                width: 50%;
             }
         }
     </style>
@@ -170,7 +151,6 @@
         <section class="secondary-section">
             <div class="secondary-content">
                 <h2>Latest AI Models</h2>
-                <img src="ai_models.png" alt="AI Models">
                 <p>Benefit from innovative AI models built by Amazon, Google, OpenAI, and more. Leverage GPT-4 and other cutting-edge AI to solve document automation challenges.</p>
                 <button class="cta-button">View Platform Architecture</button>
             </div>
