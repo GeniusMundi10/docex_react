@@ -55,7 +55,7 @@
             white-space: nowrap;
         }
 
-        .hero, .secondary-section {
+        .hero, .secondary-section, .outcome-section {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -63,28 +63,28 @@
             text-align: center;
         }
 
-        .hero-content, .secondary-content {
+        .hero-content, .secondary-content, .outcome-content {
             max-width: 90%;
         }
 
-        .hero img, .secondary-section img {
+        .hero img, .secondary-section img, .outcome-graph img {
             width: 100%;
             height: auto;
             margin-top: 20px;
         }
         
         @media (min-width: 768px) {
-            .hero, .secondary-section {
+            .hero, .secondary-section, .outcome-section {
                 flex-direction: row;
                 justify-content: space-between;
                 text-align: left;
             }
         
-            .hero img, .secondary-section img {
+            .hero img, .secondary-section img, .outcome-graph img {
                 width: 50%;
             }
         
-            .hero-content, .secondary-content {
+            .hero-content, .secondary-content, .outcome-content {
                 width: 45%;
             }
         }
@@ -144,6 +144,17 @@
                 <button class="cta-button">View Platform Architecture</button>
             </div>
             <img src="image.png" alt="AI Models">
+        </section>
+
+        <section class="outcome-section">
+            <div class="outcome-content">
+                <h2>Outcome Guarantee</h2>
+                <p>Define project priorities for quality, cost, and speed, then let super.AI intelligently select the best combination of human, AI, and software workers to guarantee desired outcomes.</p>
+                <button class="cta-button">Discover Accuracy Advantage</button>
+            </div>
+            <div class="outcome-graph">
+                <img src="path_to_your_importance_graph.png" alt="Importance Graph">
+            </div>
         </section>
     </main>
 </body>
