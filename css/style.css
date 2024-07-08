@@ -127,6 +127,7 @@ nav ul li a:hover {
         opacity: 1;
     }
 }
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -142,51 +143,136 @@ section {
     background: #f9f9f9;
 }
 
-.features, .how-it-works, .testimonials, .pricing, .faq, .contact {
+.features {
     background: #fff;
     color: #333;
-    margin-bottom: 40px;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-.features h2, .how-it-works h2, .testimonials h2, .pricing h2, .faq h2, .contact h2 {
+.features h2 {
     margin-bottom: 30px;
     font-size: 2.5rem;
     color: #0033cc;
 }
 
-.feature-grid, .steps, .testimonials-grid, .pricing-plans {
+.feature-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
 
-.feature, .step, .testimonial, .plan, .faq-item {
+.feature {
     flex: 1 1 300px;
     padding: 20px;
     background: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.feature img, .step img {
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.feature img {
     max-width: 100%;
     height: auto;
     margin-bottom: 20px;
+    border-radius: 10px;
 }
 
-.plan ul {
-    list-style: none;
-    padding: 0;
-}
-
-.plan ul li {
+.feature h3 {
     margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.step {
+    flex: 1 1 300px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.step img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.step h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.step p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.testimonials, .pricing, .faq, .contact {
+    background: #fff;
+    color: #333;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.testimonials h2, .pricing h2, .faq h2, .contact h2 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: #0033cc;
+}
+
+.testimonials-grid, .pricing-plans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonial, .plan, .faq-item {
+    flex: 1 1 300px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.testimonial:hover, .plan:hover, .faq-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
 .testimonial p {
@@ -196,6 +282,15 @@ section {
 .testimonial h4 {
     margin-top: 10px;
     font-weight: bold;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+}
+
+.plan ul li {
+    margin-bottom: 10px;
 }
 
 .faq-item h3 {
@@ -221,7 +316,6 @@ footer form input, footer form textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
 footer form button {
     padding: 10px 20px;
     background: #0066ff;
