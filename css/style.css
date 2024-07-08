@@ -142,3 +142,14 @@ footer form button {
 footer form button:hover {
   background: #0033cc;
 }
+
+/* Active link style */
+nav ul li a.active {
+    color: #ff6600;
+    border-bottom: 2px solid #ff6600;
+}
+
+/* Smooth scrolling behavior */
+html {
+    scroll-behavior: smooth;
+}
