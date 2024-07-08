@@ -1,5 +1,3 @@
-// main.js
-
 document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('nav ul li a');
     const sections = document.querySelectorAll('section');
@@ -13,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const targetSection = document.getElementById(targetId);
 
             window.scrollTo({
-                top: targetSection.offsetTop - 50,  // Adjust for fixed header
+                top: targetSection.offsetTop - 60,  // Adjust for fixed header
                 behavior: 'smooth'
             });
         });
@@ -24,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let current = '';
 
         sections.forEach(section => {
-            const sectionTop = section.offsetTop - 60;
+            const sectionTop = section.offsetTop - 80;
             if (pageYOffset >= sectionTop) {
                 current = section.getAttribute('id');
             }
