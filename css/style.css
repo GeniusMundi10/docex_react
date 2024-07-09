@@ -62,7 +62,6 @@ nav .logo img {
     height: 50px;
     max-width: none;
 }
-
 nav ul {
     list-style: none;
     display: flex;
@@ -156,9 +155,10 @@ section {
 }
 
 .feature-slider {
-    width: 100%; /* Ensure the slider takes full width */
+    width: 80%; /* Ensure the slider takes up a good portion of the container */
     display: flex;
     justify-content: center;
+    margin: 0 auto; /* Center the slider */
 }
 
 .feature {
@@ -207,6 +207,7 @@ footer form {
     max-width: 600px;
     margin: 0 auto;
 }
+
 footer form input, footer form textarea {
     width: 100%;
     padding: 10px;
