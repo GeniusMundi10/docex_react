@@ -68,7 +68,6 @@ nav ul {
     display: flex;
     gap: 20px;
 }
-
 nav ul li a {
     color: white;
     font-weight: bold;
@@ -158,32 +157,20 @@ section {
     color: #0033cc;
 }
 
-.feature-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+.feature-slider {
+    width: 80%;
+    margin: 0 auto;
 }
 
 .feature {
-    flex: 1 1 300px;
     padding: 20px;
-    background: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.feature:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
 }
 
 .feature img {
     max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .feature-content {
@@ -199,6 +186,10 @@ section {
 .feature-content p {
     font-size: 1rem;
     color: #666;
+}
+
+.slick-dots {
+    bottom: -30px;
 }
 
 .steps {
@@ -319,6 +310,7 @@ footer form input, footer form textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
 footer form button {
     padding: 10px 20px;
     background: #0066ff;
