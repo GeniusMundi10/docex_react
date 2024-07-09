@@ -171,7 +171,6 @@ section {
     background: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -187,13 +186,17 @@ section {
     border-radius: 10px;
 }
 
-.feature h3 {
+.feature-content {
+    padding: 10px;
+}
+
+.feature-content h3 {
     margin-bottom: 10px;
     font-size: 1.5rem;
     color: #333;
 }
 
-.feature p {
+.feature-content p {
     font-size: 1rem;
     color: #666;
 }
