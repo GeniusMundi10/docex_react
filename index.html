@@ -23,8 +23,8 @@
             <li><a href="#contact" class="btn">Contact</a></li>
         </ul>
     </div>
-
-    <header>
+    
+    <header class="hero">
         <div class="hero-content">
             <h1>Transform Your Document Processing with Our IDP</h1>
             <p>Efficient, Accurate, and Intelligent Document Processing</p>
@@ -49,26 +49,32 @@
                     <p>Reliable and precise document processing.</p>
                 </div>
             </div>
-            <!-- Add more features as needed -->
+            <div class="feature">
+                <img src="images/seamless-integration.png" alt="Seamless Integration">
+                <div class="feature-content">
+                    <h3>Seamless Integration</h3>
+                    <p>Effortlessly integrate extracted data into your existing systems. Our IDP technology not only pulls data from documents but also formats it to seamlessly sync with your databases, CRMs, and other operational tools, enhancing workflow efficiency and data accuracy.</p>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- Other sections (How It Works, Testimonials, Pricing, FAQ, Contact) go here. -->
+    
     <footer id="contact" class="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <form action="submit_form.php" method="post">
-                <input type="text" name="name" placeholder="Your Name">
-                <input type="email" name="email" placeholder="Your Email">
-                <textarea name="message" placeholder="Your Message"></textarea>
-                <button type="submit">Send</button>
-            </form>
-            <p>© 2024 DocEX AI</p>
-        </div>
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="post">
+            <input type="text" name="name" placeholder="Your Name">
+            <input type="email" name="email" placeholder="Your Email">
+            <textarea name="message" placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p>© 2024 Your Company Name</p>
     </footer>
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script type="text/javascript">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
         $(document).ready(function(){
             $('.feature-slider').slick({
                 dots: true,
