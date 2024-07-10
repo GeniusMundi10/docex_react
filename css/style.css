@@ -62,12 +62,12 @@ nav .logo img {
     height: 50px;
     max-width: none;
 }
-
 nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
 }
+
 nav ul li a {
     color: white;
     font-weight: bold;
@@ -81,7 +81,7 @@ nav ul li a:hover {
 }
 
 .hero-content {
-    margin-top: 40px;
+    margin-top: 80px; /* Adjust this value if needed to avoid overlap with the navbar */
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
