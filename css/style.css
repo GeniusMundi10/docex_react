@@ -65,7 +65,7 @@ a {
 header {
     background: linear-gradient(135deg, #0066ff, #0033cc);
     color: white;
-    padding: 60px 0 40px;
+    padding: 100px 0;
     text-align: center;
     margin-top: 60px; /* Ensure header is below navbar */
 }
@@ -77,11 +77,13 @@ header {
 .hero-content h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    animation: slideIn 1s ease-in-out;
 }
 
 .hero-content p {
     font-size: 1.2rem;
     margin-bottom: 30px;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 .hero-content .btn {
@@ -99,6 +101,26 @@ header {
 .hero-content .btn:hover {
     background: #cc5200;
     transform: translateY(-2px);
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 /* Section Styles */
