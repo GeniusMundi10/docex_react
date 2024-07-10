@@ -32,7 +32,7 @@ a {
 }
 
 .navbar .logo {
-    margin-right: auto; /* Pushes all other elements to the right */
+    margin-right: auto; /* Ensures logo is on the left */
 }
 
 .navbar .logo img {
@@ -43,23 +43,35 @@ a {
     display: flex;
     align-items: center;
     gap: 20px;
-    
 }
 
 .navbar .nav-links li {
     list-style: none;
 }
 
-.navbar .nav-links li a {
+.navbar .nav-links li a, .navbar .btn {
     color: white;
     font-weight: bold;
-    padding:  10px;
+    padding: 10px;
     transition: background 0.3s, color 0.3s;
 }
 
-.navbar .nav-links li a:hover {
+.navbar .nav-links li a:hover, .navbar .btn:hover {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
+}
+
+.navbar .btn {
+    padding: 15px 30px;
+    background: #ff6600; /* Button background */
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navbar .btn:hover {
+    background: #cc5200;
+    transform: translateY(-2px);
 }
 
 header {
@@ -68,8 +80,6 @@ header {
     padding: 100px 0;
     text-align: center;
     margin-top: 60px; /* Ensures header is below navbar */
-    position: relative;
-    overflow: hidden;
 }
 
 .hero-content {
@@ -87,23 +97,6 @@ header {
     margin-bottom: 30px;
 }
 
-.hero-content .btn {
-    display: inline-block;
-    padding: 15px 30px;
-    background: #ff6600;
-    color: white;
-    border-radius: 5px;
-    transition: background 0.3s, transform 0.3s;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.hero-content .btn:hover {
-    background: #cc5200;
-    transform: translateY(-2px);
-}
-
 @keyframes fadeInText {
     from {
         transform: translateY(20%);
@@ -114,8 +107,6 @@ header {
         opacity: 1;
     }
 }
-
-
 
 /* Section Styles */
 section {
