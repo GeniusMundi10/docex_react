@@ -19,27 +19,18 @@ a {
     text-decoration: none;
 }
 
-header {
-    background: linear-gradient(135deg, #0066ff, #0033cc);
-    color: white;
-    padding: 40px 0;
-    text-align: center;
-}
-
-header .container {
-    position: relative;
-}
-
 .navbar {
-    position: sticky;
+    width: 100%;
+    position: fixed;
     top: 0;
+    left: 0;
     background: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(10px);
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    z-index: 1000;
 }
 
 .navbar .logo img {
@@ -64,8 +55,15 @@ header .container {
     border-radius: 5px;
 }
 
+header {
+    background: linear-gradient(135deg, #0066ff, #0033cc);
+    color: white;
+    padding: 60px 0 40px;
+    text-align: center;
+    margin-top: 60px; /* Ensure header is below navbar */
+}
+
 .hero-content {
-    margin-top: 20px; 
     text-align: center;
 }
 
@@ -118,7 +116,7 @@ section {
 }
 
 .feature-slider {
-    width: 80%; /* Adjusted width for better centering */
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -128,7 +126,7 @@ section {
 }
 
 .feature img {
-    max-width: 100%; /* Adjusted to ensure full width */
+    max-width: 100%;
     border-radius: 10px;
     margin-bottom: 20px;
 }
