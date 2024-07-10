@@ -23,9 +23,8 @@ a {
     background: #000; /* Black background for the navbar */
     color: #fff;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 0 20px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -33,7 +32,6 @@ a {
 }
 
 .navbar .logo {
-    flex-shrink: 0;
     margin-right: auto; /* Pushes all other elements to the right */
 }
 
@@ -55,7 +53,7 @@ a {
 .navbar .nav-links li a {
     color: white;
     font-weight: bold;
-    padding: 5px 10px;
+    padding:  10px;
     transition: background 0.3s, color 0.3s;
 }
 
@@ -116,6 +114,8 @@ header {
         opacity: 1;
     }
 }
+
+
 
 /* Section Styles */
 section {
