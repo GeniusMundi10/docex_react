@@ -20,16 +20,16 @@ a {
 }
 
 .navbar {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: #000;
-    z-index: 1000;
+    background: #000; /* Black background for the navbar */
+    color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 .navbar .logo {
@@ -42,8 +42,9 @@ a {
 
 .navbar .nav-links {
     display: flex;
+    align-items: center;
     gap: 20px;
-    margin-left: auto;
+    margin-left: auto; /* Moves the navigation links to the right */
 }
 
 .navbar .nav-links li {
@@ -67,23 +68,24 @@ header {
     color: white;
     padding: 100px 0;
     text-align: center;
-    margin-top: 60px; /* Ensure header is below navbar */
+    margin-top: 60px; /* Ensures header is below navbar */
+    position: relative;
+    overflow: hidden;
 }
 
 .hero-content {
     text-align: center;
+    animation: fadeInText 1.5s ease-in-out forwards; /* Animation for the text */
 }
 
 .hero-content h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    animation: slideIn 1s ease-in-out;
 }
 
 .hero-content p {
     font-size: 1.2rem;
     margin-bottom: 30px;
-    animation: fadeIn 1.5s ease-in-out;
 }
 
 .hero-content .btn {
@@ -103,22 +105,13 @@ header {
     transform: translateY(-2px);
 }
 
-@keyframes slideIn {
+@keyframes fadeInText {
     from {
-        transform: translateY(-100%);
+        transform: translateY(20%);
         opacity: 0;
     }
     to {
         transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
         opacity: 1;
     }
 }
