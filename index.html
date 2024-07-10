@@ -23,15 +23,15 @@
             <li><a href="#contact" class="btn">Contact</a></li>
         </ul>
     </div>
-    
-    <header class="hero">
+
+    <header>
         <div class="hero-content">
             <h1>Transform Your Document Processing with Our IDP</h1>
             <p>Efficient, Accurate, and Intelligent Document Processing</p>
             <a href="#contact" class="btn">Get a Demo</a>
         </div>
     </header>
-    
+
     <section id="features" class="features">
         <h2>Features</h2>
         <div class="feature-slider">
@@ -50,33 +50,41 @@
                 </div>
             </div>
             <div class="feature">
-                <img src="images/DataIntegration.png" alt="Seamless Integration">
+                <img src="images/integration.png" alt="Seamless Integration">
                 <div class="feature-content">
                     <h3>Seamless Integration</h3>
-                    <p>Effortlessly integrate extracted data into your existing systems. Our IDP technology not only pulls data from documents but also formats it to seamlessly sync with your databases, CRMs, and other operational tools, enhancing workflow efficiency and data accuracy.</p>
+                    <p>Get data from documents and seamlessly integrate into your environment.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Other sections (How It Works, Testimonials, Pricing, FAQ, Contact) go here. -->
-    
-    <footer id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <form action="submit_form.php" method="post">
-            <input type="text" name="name" placeholder="Your Name">
-            <input type="email" name="email" placeholder="Your Email">
-            <textarea name="message" placeholder="Your Message"></textarea>
-            <button type="submit">Send</button>
-        </form>
-        <p>© 2024 Your Company Name</p>
-    </footer>
+    <section id="how-it-works" class="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps-slider">
+            <div class="step">
+                <img src="images/upload-icon.png" alt="Upload Documents">
+                <h3>Upload Documents</h3>
+                <p>Simply upload your documents to our platform.</p>
+            </div>
+            <div class="step">
+                <img src="images/process-icon.png" alt="Process Documents">
+                <h3>Process Documents</h3>
+                <p>Our AI processes the documents instantly.</p>
+            </div>
+            <div class="step">
+                <img src="images/results-icon.png" alt="Get Results">
+                <h3>Get Results</h3>
+                <p>Receive processed data ready for use.</p>
+            </div>
+        </div>
+    </section>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script>
         $(document).ready(function(){
-            $('.feature-slider').slick({
+            $('.feature-slider, .steps-slider').slick({
                 dots: true,
                 infinite: true,
                 speed: 500,
