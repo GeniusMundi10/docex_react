@@ -27,45 +27,45 @@ header {
 }
 
 header .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    position: relative;
 }
 
-nav {
-    width: 100%;
+.navbar {
+    position: sticky;
+    top: 0;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(10px);
+    z-index: 1000;
 }
 
-nav .logo img {
+.navbar .logo img {
     height: 50px;
 }
 
-nav ul {
+.navbar ul {
     list-style: none;
     display: flex;
     gap: 20px;
 }
 
-nav ul li a {
+.navbar ul li a {
     color: white;
     font-weight: bold;
     padding: 5px 10px;
     transition: background 0.3s, color 0.3s;
 }
 
-nav ul li a:hover {
+.navbar ul li a:hover {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
 }
 
 .hero-content {
-    margin-top: 60px; /* Adjusted margin-top for better spacing */
+    margin-top: 20px; 
     text-align: center;
 }
 
@@ -128,7 +128,7 @@ section {
 }
 
 .feature img {
-    width: 100%; /* Adjusted to ensure full width */
+    max-width: 100%; /* Adjusted to ensure full width */
     border-radius: 10px;
     margin-bottom: 20px;
 }
