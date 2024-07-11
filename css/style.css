@@ -172,40 +172,46 @@ section {
     bottom: -30px;
 }
 #demo-section {
-    background: #4c3398; /* Dark purple background */
+    background: #673ab7; /* Adjusted the purple to a more vibrant shade for better visibility */
     color: white;
-    padding: 40px 20px;
+    padding: 50px 20px;
     text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Adding some depth */
 }
 
-#demo-section .demo-container {
-    max-width: 1200px;
+.demo-container {
+    max-width: 1000px; /* Set a max-width for larger screens */
     margin: 0 auto;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center-align the content */
+    gap: 20px; /* Add space between elements */
 }
 
-#demo-section h2 {
+.demo-header {
+    font-size: 1.8rem; /* Larger text for the header */
     margin-bottom: 15px;
 }
 
-#demo-section p {
+.demo-description {
+    font-size: 1.2rem; /* Adjust text size for description */
+    max-width: 800px; /* Limit the width of the text for readability */
     margin-bottom: 20px;
 }
 
-#demo-section .demo-btn {
-    background: #ff6600;
+.demo-btn {
+    background: #ff5722; /* Vibrant button color */
     color: white;
-    padding: 10px 20px;
+    padding: 10px 25px;
+    font-size: 1rem;
+    border: none;
     border-radius: 5px;
-    text-transform: uppercase;
-    transition: background 0.3s, transform 0.3s;
+    cursor: pointer;
+    transition: background 0.3s;
 }
 
-#demo-section .demo-btn:hover {
-    background: #cc5200;
-    transform: translateY(-2px);
+.demo-btn:hover {
+    background: #e64a19; /* Darker shade on hover */
 }
 /* Responsive Design */
 @media (max-width: 768px) {
