@@ -11,13 +11,13 @@ $(document).ready(function(){
     });
 
     // Handling the modal opening
-    $('#open-modal').click(function(e) {
-        e.preventDefault();
-        $('.modal-backdrop').show();
+   $('#open-modal').click(function() {
+        $('.modal-backdrop').fadeIn();
     });
 
-    // Handling the modal closing
+    // Trigger to close modal
     $('.close').click(function() {
-        $('.modal-backdrop').hide();
+        $('.modal-backdrop').fadeOut();
     });
+});
 });
