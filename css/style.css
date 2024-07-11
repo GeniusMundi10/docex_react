@@ -179,39 +179,33 @@ section {
 }
 
 .demo-container {
-    background-color: #362f78; /* Dark purple background */
-    color: white;
-    padding: 20px 40px;
-    max-width: 800px; /* Set a max-width for the container */
-    margin: 40px auto; /* Centers the box horizontally and adds vertical spacing */
-    border-radius: 10px; /* Optional: adds rounded corners */
-    box-shadow: 0 4px 20px rgba(0,0,0,0.2); /* Optional: adds shadow for depth */
-    text-align: center; /* Center-align the text */
+    display: inline-block; /* Makes the container an inline-block for center alignment */
+    background-color: #673ab7; /* Dark purple background for the container */
+    color: white; /* White text color */
+    padding: 20px 40px; /* Padding inside the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
 }
 
 .demo-container h2 {
-    font-size: 2rem; /* Adjust the size as needed */
-    margin-bottom: 20px; /* Space below the title */
+    margin-bottom: 15px; /* Space below the heading */
 }
 
 .demo-container p {
-    font-size: 1.2rem; /* Adjust the size as needed */
     margin-bottom: 20px; /* Space below the paragraph */
 }
 
 .demo-container .btn {
-    background-color: #ff6600; /* Button color */
-    padding: 10px 20px;
-    color: white;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 5px;
-    transition: background 0.3s, transform 0.3s;
+    padding: 10px 20px; /* Padding inside the button */
+    background-color: #9575cd; /* Lighter purple for the button */
+    color: white; /* White text for the button */
+    text-decoration: none; /* Removes underline from the link */
+    border-radius: 5px; /* Rounded corners for the button */
+    transition: background-color 0.3s; /* Smooth transition for background color change */
 }
 
 .demo-container .btn:hover {
-    background-color: #e65c00; /* Darker shade on hover */
-    transform: translateY(-2px); /* Slight raise effect */
+    background-color: #7e57c2; /* Darker purple on hover */
 }
 /* Responsive Design */
 @media (max-width: 768px) {
