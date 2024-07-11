@@ -67,7 +67,7 @@ header {
     color: white;
     padding: 100px 0;
     text-align: center;
-    margin-top: 60px; /* Ensures header is below navbar */
+    margin-top: 0; /* Ensures header is below navbar */
     position: relative;
     overflow: hidden;
 }
