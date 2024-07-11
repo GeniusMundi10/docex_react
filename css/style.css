@@ -171,7 +171,42 @@ section {
 .slick-dots {
     bottom: -30px;
 }
+#demo-section {
+    background: #4c3398; /* Dark purple background */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
 
+#demo-section .demo-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#demo-section h2 {
+    margin-bottom: 15px;
+}
+
+#demo-section p {
+    margin-bottom: 20px;
+}
+
+#demo-section .demo-btn {
+    background: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background 0.3s, transform 0.3s;
+}
+
+#demo-section .demo-btn:hover {
+    background: #cc5200;
+    transform: translateY(-2px);
+}
 /* Responsive Design */
 @media (max-width: 768px) {
     .navbar .nav-links,
