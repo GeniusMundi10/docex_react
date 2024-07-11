@@ -173,9 +173,8 @@ section {
 }
 /* Demo Section Styles */
 #demo-section {
-    background-color: #6667AB; /* Example color */
-    color: #fff;
-    padding: 20px;
+    background-color: white /* Example color */
+    padding: 40px 0;
     text-align: center;
 }
 
