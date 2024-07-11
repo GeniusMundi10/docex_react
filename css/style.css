@@ -153,6 +153,7 @@ section {
 
 .feature-content, .step-content {
     padding: 10px;
+    text-align: center;
 }
 
 .feature-content h3, .step-content h3 {
