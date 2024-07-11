@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    // Initialize Slick sliders
     $('.feature-slider, .steps-slider').slick({
         dots: true,
         infinite: true,
@@ -7,17 +6,25 @@ $(document).ready(function(){
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 2000
     });
 
-    // Handling the modal opening
-   $('#open-modal').click(function() {
-        $('.modal-backdrop').fadeIn();
-    });
+    // Modal functionality
+    var modal = document.getElementById("demoModal");
+    var btn = document.getElementById("open-modal");
+    var span = document.getElementsByClassName("close")[0];
 
-    // Trigger to close modal
-    $('.close').click(function() {
-        $('.modal-backdrop').fadeOut();
-    });
-});
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
 });
