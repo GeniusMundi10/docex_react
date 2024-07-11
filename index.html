@@ -91,22 +91,21 @@
    
 
      <!-- Modal Structure -->
-    <div id="demoModal" class="modal">
+    <div id="demoModal" class="modal-backdrop">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <h2>Start processing 100% of complex documents.</h2>
-            <form>
-                <input type="email" placeholder="Work email" required>
-                <input type="text" placeholder="First name" required>
-                <input type="text" placeholder="Last name" required>
-                <input type="text" placeholder="Job title" required>
-                <input type="text" placeholder="Company name" required>
-                <select name="country">
-                    <option value="">Country</option>
+            <h2>Get a customized demo with your documents</h2>
+            <p>Book a free consultation with our experts.</p>
+            <form class="modal-form">
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+                <input type="email" placeholder="Email" required>
+                <select>
+                    <option value="">Select Country...</option>
                     <option value="USA">USA</option>
-                <!-- Add more options here -->
+                    <option value="Canada">Canada</option>
+                <!-- Add other countries -->
                 </select>
-                <input type="number" placeholder="Documents Processed/month">
                 <button type="submit">Submit</button>
             </form>
         </div>
