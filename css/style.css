@@ -180,37 +180,39 @@ section {
 }
 
 .demo-container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #362f78; /* Dark purple background */
+    color: white;
+    padding: 20px 40px;
+    max-width: 800px; /* Set a max-width for the container */
+    margin: 40px auto; /* Centers the box horizontally and adds vertical spacing */
+    border-radius: 10px; /* Optional: adds rounded corners */
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2); /* Optional: adds shadow for depth */
+    text-align: center; /* Center-align the text */
 }
 
 .demo-container h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
+    font-size: 2rem; /* Adjust the size as needed */
+    margin-bottom: 20px; /* Space below the title */
 }
 
 .demo-container p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+    font-size: 1.2rem; /* Adjust the size as needed */
+    margin-bottom: 20px; /* Space below the paragraph */
 }
 
-.demo-btn {
-    display: inline-block;
+.demo-container .btn {
+    background-color: #ff6600; /* Button color */
     padding: 10px 20px;
-    background-color: #0046D5; /* Example color */
     color: white;
+    text-transform: uppercase;
     border: none;
     border-radius: 5px;
-    text-decoration: none;
-    font-size: 1.1rem;
-    text-transform: uppercase;
+    transition: background 0.3s, transform 0.3s;
 }
 
-.demo-btn:hover {
-    background-color: #0033A0; /* Darker shade for hover effect */
+.demo-container .btn:hover {
+    background-color: #e65c00; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight raise effect */
 }
 /* Responsive Design */
 @media (max-width: 768px) {
