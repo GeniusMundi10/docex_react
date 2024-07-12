@@ -169,20 +169,19 @@ section {
     bottom: -30px;
 }
 
-.demo-section {
+#demo-section {
+    background-color: #f9f9f9;
     padding: 60px 20px;
-    background: #fff;
     text-align: center;
-    position: relative;
 }
 
 .demo-container {
-    background: #6a5acd;
-    padding: 30px;
-    border-radius: 10px;
+    background-color: #6c5ce7;
     color: white;
-    display: inline-block;
+    padding: 40px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .demo-container h2 {
@@ -192,22 +191,24 @@ section {
 
 .demo-container p {
     margin-bottom: 20px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 .demo-container .btn {
+    display: inline-block;
+    padding: 10px 20px;
     background: #ff6600;
     color: white;
-    padding: 10px 20px;
     border-radius: 5px;
     transition: background 0.3s, transform 0.3s;
-    text-transform: capitalize;
+    font-size: 1rem;
 }
 
 .demo-container .btn:hover {
     background: #cc5200;
     transform: translateY(-2px);
 }
+
 
 .how-it-works {
     background: #fff;
