@@ -278,6 +278,7 @@ section {
     justify-content: center;
     align-items: center;
     z-index: 1001;
+    display: flex;
 }
 
 .modal-content {
@@ -289,6 +290,7 @@ section {
     text-align: center;
     position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: auto;
 }
 
 .modal-content .close {
