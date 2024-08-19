@@ -486,3 +486,46 @@ section {
     font-size: 1.2rem;
     color: #666;
 }
+
+.faq {
+    background: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.faq h2 {
+    font-size: 2.5rem;
+    color: #0033cc;
+    margin-bottom: 40px;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.faq-item {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.faq-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .faq-container {
+        padding: 0 10px;
+    }
+}
