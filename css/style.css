@@ -638,18 +638,16 @@ section {
 }
 
 .ai-models .container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
-    flex-wrap: nowrap; /* Ensure the content does not wrap */
+    gap: 40px;
 }
 
 .ai-models-logos {
-    flex: 1;
     text-align: center;
-    max-width: 45%; /* Slightly reduce the max-width */
 }
 
 .ai-models-image {
@@ -660,9 +658,6 @@ section {
 }
 
 .ai-models-text {
-    flex: 1;
-    max-width: 45%; /* Match the max-width of the image container */
-    padding-left: 20px; /* Reduce the padding for a tighter fit */
     text-align: left;
 }
 
@@ -697,13 +692,12 @@ section {
 /* Media Query for responsiveness */
 @media (max-width: 768px) {
     .ai-models .container {
-        flex-direction: column;
+        grid-template-columns: 1fr;
         text-align: center;
     }
 
     .ai-models-text {
         text-align: center;
-        padding-left: 0;
         margin-top: 20px;
     }
 
