@@ -449,3 +449,35 @@ section {
 .contact-form button:hover {
     background: #5a0dac;
 }
+
+.testimonials {
+    background: #f9f9f9;
+    color: #333;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.testimonials h2 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: #0033cc;
+}
+
+.testimonial-slider {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.testimonial {
+    padding: 20px;
+    font-style: italic;
+}
+
+.testimonial h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #666;
+}
