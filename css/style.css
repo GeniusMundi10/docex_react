@@ -582,7 +582,6 @@ section {
 .faq-item {
     display: flex;
     align-items: center;
-    justify-content: center; /* Centers the content horizontally */
     padding: 15px 20px;
     background: #fff;
     border-radius: 10px;
@@ -598,14 +597,28 @@ section {
     background-color: #f0f0f0;
 }
 
+.faq-item .faq-icon {
+    font-size: 24px;
+    margin-right: 20px;
+    flex-shrink: 0; /* Prevents icon from resizing */
+}
+
 .faq-item .faq-question {
-    text-align: center;
+    text-align: left;
     flex-grow: 1; /* Ensures the question text takes up available space */
 }
 
-.faq-item .faq-icon {
-    margin-right: 10px;
-    font-size: 24px;
+/* Ensure that the FAQ content is aligned properly */
+.faq-content {
+    display: none;
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* FAQ content toggle when clicked */
+.faq-item.active .faq-content {
+    display: block;
 }
 
 /* Adjust padding for smaller screens */
