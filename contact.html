@@ -27,24 +27,19 @@
     <section id="contact" class="contact-section">
         <h2>Contact Us</h2>
         <p>How can we help you?</p>
-        <div class="contact-options">
-            <div class="option book">
-                <h3>Book</h3>
-                <p>If you are interested in booking a personalized demo to learn how AI applies to your business, please select an appointment time below.</p>
-            </div>
-            <div class="option support">
-                <h3>Support</h3>
-                <p>If you are a customer seeking support, please fill out the form below and someone will be in touch soon.</p>
-            </div>
+        <div class="tabs">
+            <button class="tablink active" onclick="openForm(event, 'Book')">Book</button>
+            <button class="tablink" onclick="openForm(event, 'Support')">Support</button>
         </div>
-        <form class="contact-form">
-            <input type="email" placeholder="Work email" required>
-            <input type="text" placeholder="First name" required>
-            <input type="text" placeholder="Last name" required>
-            <input type="text" placeholder="Job title" required>
-            <input type="text" placeholder="Company name" required>
-            <select>
-                <option value="">Select Country...</option>
+        <div id="Book" class="tabcontent">
+            <form class="contact-form">
+                <input type="email" placeholder="Work email" required>
+                <input type="text" placeholder="First name" required>
+                <input type="text" placeholder="Last name" required>
+                <input type="text" placeholder="Job title" required>
+                <input type="text" placeholder="Company name" required>
+                <select>
+                    <option value="">Select Country...</option>
                     <option value="United States">United States</option>
                     <option value="Canada">Canada</option>
                     <option value="United Kingdom">United Kingdom</option>
@@ -70,9 +65,32 @@
                     <option value="Malaysia">Malaysia</option>
                     <option value="Argentina">Argentina</option>
                     <option value="Turkey">Turkey</option>
-            </select>
-            <button type="submit">Submit</button>
-        </form>
+                </select>
+                <input type="text" placeholder="Documents Processed/Month" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div id="Support" class="tabcontent" style="display:none;">
+            <form class="contact-form">
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+                <input type="email" placeholder="Work Email" required>
+                <input type="text" placeholder="Company Name" required>
+                <select>
+                    <option value="">How can we help you?</option>
+                    <option value="Technical Support">Technical Support</option>
+                    <option value="Billing Inquiry">Billing Inquiry</option>
+                    <option value="General Question">General Question</option>
+                <!-- Add more options as needed -->
+                </select>
+                <input type="text" placeholder="Subject of request" required>
+                <textarea placeholder="Describe your reason for contacting support" required></textarea>
+                <p class="privacy-text">
+                    By clicking "Submit," you acknowledge that your data will be processed in accordance with DocEX's privacy policy. You can unsubscribe from these communications at any time. For more information on how to unsubscribe, our privacy practices, and how we are committed to protecting and respecting your privacy, please review our <a href="privacy.html" target="_blank">Privacy Policy</a>.
+                </p>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
