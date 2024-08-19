@@ -11,6 +11,7 @@ $(document).ready(function(){
 
     // Modal functionality
     var modal = document.getElementById("demoModal");
+    modal.style.display = "none"; 
     var btn = document.getElementById("open-modal");
     var span = document.getElementsByClassName("close")[0];
 
