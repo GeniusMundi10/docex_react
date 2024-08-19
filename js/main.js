@@ -44,6 +44,7 @@ function openForm(evt, formName) {
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
+        tabcontent[i].classList.remove("active");
     }
     
     // Remove active class from all tabs
@@ -54,6 +55,7 @@ function openForm(evt, formName) {
     
     // Show the current form and add an active class to the clicked tab
     document.getElementById(formName).style.display = "block";
+    document.getElementById(formName).classList.add("active");
     evt.currentTarget.className += " active";
 }
 
