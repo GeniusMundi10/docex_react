@@ -1,12 +1,12 @@
 $(document).ready(function(){
-    $('.feature-slider, .steps-slider').slick({
+    $('.feature-slider, .steps-slider, .testimonial-slider').slick({
         dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000
+        autoplaySpeed: 3000
     });
 
     // Modal functionality
