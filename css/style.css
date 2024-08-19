@@ -649,6 +649,7 @@ section {
 .ai-models-logos {
     flex: 1;
     text-align: center;
+    max-width: 50%;
 }
 
 .ai-models-image {
@@ -660,8 +661,8 @@ section {
 
 .ai-models-text {
     flex: 1;
-    max-width: 500px;
-    padding: 20px;
+    max-width: 50%;
+    padding-left: 40px; /* Adds space between image and text */
     text-align: left;
 }
 
@@ -702,6 +703,11 @@ section {
 
     .ai-models-text {
         text-align: center;
-        padding: 0;
+        padding-left: 0;
+        margin-top: 20px;
+    }
+
+    .ai-models-logos {
+        margin-bottom: 20px;
     }
 }
