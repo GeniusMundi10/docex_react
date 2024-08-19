@@ -649,7 +649,7 @@ section {
 .ai-models-logos {
     flex: 1;
     text-align: center;
-    max-width: 45%; /* Slightly reduce the max-width */
+    max-width: 50%; /* Slightly reduce the max-width */
 }
 
 .ai-models-image {
@@ -661,7 +661,7 @@ section {
 
 .ai-models-text {
     flex: 1;
-    max-width: 45%; /* Match the max-width of the image container */
+    max-width: 50%; /* Match the max-width of the image container */
     padding-left: 20px; /* Reduce the padding for a tighter fit */
     text-align: left;
 }
