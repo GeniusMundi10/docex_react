@@ -643,7 +643,7 @@ section {
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
-    flex-wrap: nowrap; /* Ensure the content does not wrap */
+    flex-wrap: wrap;
 }
 
 .ai-models-logos {
@@ -653,7 +653,7 @@ section {
 }
 
 .ai-models-image {
-    width: 100%; /* Ensures the image takes up the full width of its container */
+    max-width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
