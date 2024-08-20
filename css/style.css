@@ -243,27 +243,39 @@ section {
     margin-bottom: 40px;
 }
 
-.how-it-works-steps {
-    display: grid;
-    grid-template-columns: 1fr;
+.how-it-works-cards {
+    display: flex;
+    justify-content: space-between;
     gap: 20px;
-    text-align: left;
+    margin-top: 30px;
 }
 
-.how-it-works-steps .step {
-    margin-bottom: 20px;
+.step-card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1;
+    text-align: center;
 }
 
-.how-it-works-steps h3 {
+.step-card h3 {
     font-size: 1.5rem;
     color: #0033cc;
     margin-bottom: 10px;
 }
 
-.how-it-works-steps p {
+.step-card p {
     font-size: 1rem;
     color: #666;
     line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .how-it-works-cards {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
 /* Modal Styles */
