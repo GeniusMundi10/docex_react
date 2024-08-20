@@ -665,7 +665,13 @@ section {
     padding-left: 40px;
     text-align: left;
 }
+.ai-models-text {
+    margin-top: 0; /* Ensure no top margin is pushing the text down */
+}
 
+.ai-models-logos {
+    margin-bottom: 0; /* Ensure no bottom margin is present */
+}
 .ai-models-text h2 {
     font-size: 2rem;
     color: #000;
