@@ -697,17 +697,24 @@ section {
 /* Media Query for responsiveness */
 @media (max-width: 768px) {
     .ai-models .container {
-        flex-direction: column;
-        text-align: center;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: nowrap; /* Ensure items stay on the same line */
+}
 
-    .ai-models-text {
-        text-align: center;
-        padding-left: 0;
-        margin-top: 20px;
-    }
+.ai-models-logos {
+    flex: 0 1 50%; /* Allow the image to take up 50% of the width */
+    text-align: center;
+    max-width: 50%;
+}
 
-    .ai-models-logos {
-        margin-bottom: 20px;
-    }
+.ai-models-text {
+    flex: 1;
+    max-width: 50%; /* Allow the text to take up the remaining 50% */
+    padding-left: 40px; /* Adds space between image and text */
+    text-align: left;
+}
 }
