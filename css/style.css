@@ -643,13 +643,18 @@ section {
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
-    flex-wrap: nowrap; /* Ensure items stay on the same line */
+    flex-wrap: nowrap;
 }
 
 .ai-models-logos {
-    flex: 0 1 50%; /* Image takes up 50% of the width */
-    max-width: 50%;
+    flex: 1 1 50%;
     text-align: center;
+}
+
+.ai-models-text {
+    flex: 1 1 50%;
+    padding-left: 40px;
+    text-align: left;
 }
 .ai-models-image {
     width: 100%; /* Make sure the image takes up its container's width */
@@ -659,19 +664,7 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.ai-models-text {
-    flex: 1;
-    max-width: 50%; /* Text takes up the remaining 50% */
-    padding-left: 40px;
-    text-align: left;
-}
-.ai-models-text {
-    margin-top: 0; /* Ensure no top margin is pushing the text down */
-}
 
-.ai-models-logos {
-    margin-bottom: 0; /* Ensure no bottom margin is present */
-}
 .ai-models-text h2 {
     font-size: 2rem;
     color: #000;
