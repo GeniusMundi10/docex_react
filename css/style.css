@@ -759,3 +759,55 @@ section {
         margin-bottom: 20px;
     }
 }
+
+.generative-ai-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.video-container {
+    flex: 1;
+}
+
+.video-container video {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-container {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.text-container h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.text-container p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-container {
+        padding-left: 0;
+        margin-top: 20px;
+    }
+}
