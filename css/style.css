@@ -188,13 +188,13 @@ section {
 }
 
 .demo-container {
-    background-color: #6c5ce7;
+    background: linear-gradient(135deg, #1e3799, #3c6382, #82ccdd); /* Matching the Blue to Light Blue gradient */
     color: white;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
