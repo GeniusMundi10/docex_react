@@ -403,8 +403,8 @@ section {
 }
 
 .contact-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+    font-size: 3rem;
+    margin-bottom: 20px;
     color: #6c5ce7;
 }
 
@@ -420,26 +420,31 @@ section {
     justify-content: center;
     margin-bottom: 30px;
     gap: 20px;
+    position: relative;
+    padding-bottom: 20px;
 }
 
 .tablink {
     background-color: #f0f0f0; /* Light grey background for inactive tabs */
     color: #000; /* Black text for inactive tabs */
-    padding: 20px 30px;
+    padding: 30px 40px;
     border: none;
     cursor: pointer;
-    font-size: 18px;
-    border-radius: 10px;
+    font-size: 20px;
+    border-radius: 10px 10px 0 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, color 0.3s ease;
-    width: 200px;
-    text-align: left;
+    width: 250px;
+    text-align: center;
     position: relative;
+    z-index: 1;
 }
 
 .tablink.active {
     background: linear-gradient(135deg, #6c5ce7, #89c4f4); /* Gradient background for active tab */
     color: #fff; /* White text for active tab */
+    z-index: 2; /* Ensure active tab is above the inactive one */
+    box-shadow: none;
 }
 
 .tablink h3 {
@@ -471,6 +476,7 @@ section {
     background: #f9f9f9;
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 3; /* Ensure arrow is above all tabs */
 }
 
 /* Tab content styling */
@@ -481,7 +487,9 @@ section {
     background: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 600px;
-    margin: 0 auto;
+    margin: -40px auto 0;
+    z-index: 1;
+    position:relative;
 }
 
 .tabcontent.active {
