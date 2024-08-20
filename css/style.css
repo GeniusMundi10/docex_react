@@ -67,7 +67,7 @@ a {
     100% { background-position: 0% 50%; }
 }
 header {
-    background: linear-gradient(135deg, #ff0000, #990000, #000000, #333333);
+    background: linear-gradient(135deg, #1e3c72, #2a5298, #38b2ac);
     background-size: 400% 400%;
     animation: gradientAnimation 15s ease infinite;
     color: white;
