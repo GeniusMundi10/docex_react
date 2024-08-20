@@ -230,40 +230,34 @@ section {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    margin-top: 40px;
 }
 
-.how-it-works h2 {
-    margin-bottom: 30px;
-    font-size: 2.5rem;
-    color: #0033cc;
+.how-it-works-video {
+    margin-bottom: 40px;
 }
 
-.steps-slider {
-    width: 80%;
-    margin: 0 auto;
+.how-it-works-steps {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: left;
 }
 
-.step {
-    padding: 20px;
-    text-align: center;
-}
-
-.step img {
-    max-width: 100%;
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px;
+.how-it-works-steps .step {
     margin-bottom: 20px;
 }
 
-.step h3 {
-    margin-bottom: 10px;
+.how-it-works-steps h3 {
     font-size: 1.5rem;
-    color: #333;
+    color: #0033cc;
+    margin-bottom: 10px;
 }
 
-.step p {
+.how-it-works-steps p {
     font-size: 1rem;
     color: #666;
+    line-height: 1.5;
 }
 
 /* Modal Styles */
