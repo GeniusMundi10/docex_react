@@ -811,3 +811,60 @@ section {
         margin-top: 20px;
     }
 }
+
+.deployment-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.text-container {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.text-container h2 {
+    font-size: 2.5rem;
+    color: #000;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.text-container p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.video-container {
+    flex: 1;
+}
+
+.video-container video {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-container {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .video-container video {
+        margin-top: 20px;
+    }
+}
