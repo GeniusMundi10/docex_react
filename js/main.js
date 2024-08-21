@@ -88,6 +88,7 @@ function sendForm(form, url) {
         if (response.ok) {
             form.reset();
             window.location.href = "#contact"; // Redirect back to the contact page section
+            alert("Thank you! Your submission has been received.");
         } else {
             alert("There was a problem with your submission. Please try again.");
         }
@@ -99,5 +100,28 @@ function sendForm(form, url) {
 // Modal form submission handling
 document.getElementById("demoForm").addEventListener("submit", function(event) {
     event.preventDefault(); // Prevent the default form submission
-    sendForm(this, "https://formspree.io/f/xqazyeob"); // Replace with your Formspree ID
+    sendModalForm(this, "https://formspree.io/f/xqazyeob"); // Replace with your Formspree ID
 });
+// Function to send modal form data
+function sendModalForm(form, url) {
+    var formData = new FormData(form);
+
+    fetch(url, {
+        method: "POST",
+        body: formData,
+        headers: {
+            "Accept": "application/json"
+        }
+    }).then(response => {
+        if (response.ok) {
+            form.reset(); // Clear the form fields after submission
+            form.parentNode.style.display = "none"; // Hide the modal after submission
+            alert("Thank you! Your submission has been received.");
+        } else {
+            alert("There was a problem with your submission. Please try again.");
+        }
+    }).catch(error => {
+        console.error("Error:", error);
+        alert("There was a problem with your submission. Please try again.");
+    });
+}
