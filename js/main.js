@@ -32,6 +32,14 @@ $(document).ready(function(){
             }
         }
     }
+    var navbarToggler = document.getElementById("navbar-toggler");
+    var navLinks = document.getElementById("nav-links");
+
+    if (navbarToggler && navLinks) {
+        navbarToggler.onclick = function() {
+            navLinks.classList.toggle("show");
+        };
+    }
 });
 
 // FAQ Accordion functionality
