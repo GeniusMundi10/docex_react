@@ -26,7 +26,7 @@
         </ul>
     </div>
 
-   <section id="contact" class="contact-section">
+    <section id="contact" class="contact-section">
         <h2>Contact Us</h2>
         <p>How can we help you?</p>
         <div class="tabs">
@@ -39,14 +39,16 @@
                 <p>If you are a customer seeking support, please fill out the form below and someone will be in touch soon.</p>
             </button>
         </div>
-        <div id="Book" class="tabcontent">
-            <form class="contact-form">
-                <input type="email" placeholder="Work email" required>
-                <input type="text" placeholder="First name" required>
-                <input type="text" placeholder="Last name" required>
-                <input type="text" placeholder="Job title" required>
-                <input type="text" placeholder="Company name" required>
-                <select>
+    
+        <!-- Book Form -->
+        <div id="Book" class="tabcontent active">
+            <form action="https://formspree.io/f/xqazyeob" method="POST" class="contact-form">
+                <input type="email" name="Work Email" placeholder="Work email" required>
+                <input type="text" name="First Name" placeholder="First name" required>
+                <input type="text" name="Last Name" placeholder="Last name" required>
+                <input type="text" name="Job Title" placeholder="Job title" required>
+                <input type="text" name="Company Name" placeholder="Company name" required>
+                <select name="Country">
                     <option value="">Select Country...</option>
                     <option value="United States">United States</option>
                     <option value="Canada">Canada</option>
@@ -74,55 +76,65 @@
                     <option value="Argentina">Argentina</option>
                     <option value="Turkey">Turkey</option>
                 </select>
-                <input type="text" placeholder="Documents Processed/Month" required>
+                <input type="text" name="Documents Processed/Month" placeholder="Documents Processed/Month" required>
                 <label>Document Types*</label>
                 <div class="document-types">
-                    <label><input type="checkbox" value="Airway Bills"> Airway Bills</label>
-                    <label><input type="checkbox" value="Bank Statements"> Bank Statements</label>
-                    <label><input type="checkbox" value="Bills of Lading"> Bills of Lading</label>
-                    <label><input type="checkbox" value="Business Cards"> Business Cards</label>
-                    <label><input type="checkbox" value="Contracts"> Contracts</label>
-                    <label><input type="checkbox" value="Customs Forms"> Customs Forms</label>
-                    <label><input type="checkbox" value="Driver's Licenses"> Driver's Licenses</label>
-                    <label><input type="checkbox" value="Expense Documents"> Expense Documents</label>
-                    <label><input type="checkbox" value="GewAI (DE) Documents"> GewAI (DE) Documents</label>
-                    <label><input type="checkbox" value="Identity Documents"> Identity Documents</label>
-                    <label><input type="checkbox" value="Invoices"> Invoices</label>
-                    <label><input type="checkbox" value="Mortgage Statements"> Mortgage Statements</label>
-                    <label><input type="checkbox" value="Order Forms"> Order Forms</label>
-                    <label><input type="checkbox" value="Pay Slips"> Pay Slips</label>
-                    <label><input type="checkbox" value="Purchase Orders"> Purchase Orders</label>
-                    <label><input type="checkbox" value="Receipts"> Receipts</label>
-                    <label><input type="checkbox" value="Retirement/Investment Statements"> Retirement/Investment Statements</label>
-                    <label><input type="checkbox" value="Shipping Labels"> Shipping Labels</label>
-                    <label><input type="checkbox" value="Tax Documents"> Tax Documents</label>
-                    <label><input type="checkbox" value="Utility Bills"> Utility Bills</label>
-                    <label><input type="checkbox" value="Other"> Other</label>
+                    <label><input type="checkbox" name="Document Types[]" value="Airway Bills"> Airway Bills</label>
+                    <label><input type="checkbox" name="Document Types[]" value="Bank Statements"> Bank Statements</label>
+                    <label><input type="checkbox" name="Document Types[]" value="Bills of Lading"> Bills of Lading</label>
+                    <label><input type="checkbox" name="Document Types[]" value="Business Cards"> Business Cards</label>
+                    <label><input type="checkbox" name="Document Types[]" value="Contracts"> Contracts</label>
+                    <label><input type="checkbox" name="Document Types[]" value="Customs Forms"> Customs Forms</label>
+                    <label><input type="checkbox" name="Document Types[]" value="Driver's Licenses"> Driver's Licenses</label>
+                    <label><input type="checkbox" name="Document Types[]" value="Expense Documents"> Expense Documents</label>
+                    <label><input type="checkbox" name="Document Types[]" value="GewAI (DE) Documents"> GewAI (DE) Documents</label>
+                    <label><input type="checkbox" name="Document Types[]" value="Identity Documents"> Identity Documents</label>
+                    <label><input type="checkbox" name="Document Types[]" value="Invoices"> Invoices</label>
+                    <label><input type="checkbox" name="Document Types[]" value="Mortgage Statements"> Mortgage Statements</label>
+                    <label><input type="checkbox" name="Document Types[]" value="Order Forms"> Order Forms</label>
+                    <label><input type="checkbox" name="Document Types[]" value="Pay Slips"> Pay Slips</label>
+                    <label><input type="checkbox" name="Document Types[]" value="Purchase Orders"> Purchase Orders</label>
+                    <label><input type="checkbox" name="Document Types[]" value="Receipts"> Receipts</label>
+                    <label><input type="checkbox" name="Document Types[]" value="Retirement/Investment Statements"> Retirement/Investment Statements</label>
+                    <label><input type="checkbox" name="Document Types[]" value="Shipping Labels"> Shipping Labels</label>
+                    <label><input type="checkbox" name="Document Types[]" value="Tax Documents"> Tax Documents</label>
+                    <label><input type="checkbox" name="Document Types[]" value="Utility Bills"> Utility Bills</label>
+                    <label><input type="checkbox" name="Document Types[]" value="Other"> Other</label>
                 </div>
-                <textarea placeholder="Please describe your use case*" required></textarea>
+                <textarea name="Use Case" placeholder="Please describe your use case*" required></textarea>
                 <p class="privacy-text">
-                    By clicking "Submit," you acknowledge that your data will be processed in accordance with DocEX's privacy policy. You can unsubscribe from these communications at any time. For more information on how to unsubscribe, our privacy practices, and how we are committed to protecting and respecting your privacy, please review our <a href="privacy.html" target="_blank">Privacy Policy</a>.
+                    By clicking "Submit," you acknowledge that your data will be processed in accordance with DocEX's privacy policy. 
+                    You can unsubscribe from these communications at any time. 
+                    For more information on how to unsubscribe, our privacy practices, and how we are committed to protecting and 
+                    respecting your privacy, please review our 
+                    <a href="privacy.html" target="_blank">Privacy Policy</a>.
                 </p>
                 <button type="submit">Submit</button>
             </form>
         </div>
+    
+        <!-- Support Form -->
         <div id="Support" class="tabcontent" style="display:none;">
-            <form class="contact-form">
-                <input type="text" placeholder="First Name" required>
-                <input type="text" placeholder="Last Name" required>
-                <input type="email" placeholder="Work Email" required>
-                <input type="text" placeholder="Company Name" required>
-                <select>
+            <form action="https://formspree.io/f/xqazyeob" method="POST" class="contact-form">
+                <input type="text" name="First Name" placeholder="First Name" required>
+                <input type="text" name="Last Name" placeholder="Last Name" required>
+                <input type="email" name="Work Email" placeholder="Work Email" required>
+                <input type="text" name="Company Name" placeholder="Company Name" required>
+                <select name="Help Topic">
                     <option value="">How can we help you?</option>
                     <option value="Technical Support">Technical Support</option>
                     <option value="Billing Inquiry">Billing Inquiry</option>
                     <option value="General Question">General Question</option>
-                <!-- Add more options as needed -->
+                    <!-- Add more options as needed -->
                 </select>
-                <input type="text" placeholder="Subject of request" required>
-                <textarea placeholder="Describe your reason for contacting support" required></textarea>
+                <input type="text" name="Subject" placeholder="Subject of request" required>
+                <textarea name="Support Description" placeholder="Describe your reason for contacting support" required></textarea>
                 <p class="privacy-text">
-                    By clicking "Submit," you acknowledge that your data will be processed in accordance with DocEX's privacy policy. You can unsubscribe from these communications at any time. For more information on how to unsubscribe, our privacy practices, and how we are committed to protecting and respecting your privacy, please review our <a href="privacy.html" target="_blank">Privacy Policy</a>.
+                    By clicking "Submit," you acknowledge that your data will be processed in accordance with DocEX's privacy policy. 
+                    You can unsubscribe from these communications at any time. 
+                    For more information on how to unsubscribe, our privacy practices, and how we are committed to protecting and 
+                    respecting your privacy, please review our 
+                    <a href="privacy.html" target="_blank">Privacy Policy</a>.
                 </p>
                 <button type="submit">Submit</button>
             </form>
