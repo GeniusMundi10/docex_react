@@ -114,14 +114,16 @@ function sendModalForm(form, url) {
         }
     }).then(response => {
         if (response.ok) {
+            console.log("Form submitted successfully.");
             form.reset(); // Clear the form fields after submission
             form.parentNode.style.display = "none"; // Hide the modal after submission
             alert("Thank you! Your submission has been received.");
         } else {
+            response.json().then(data => console.log("Server error:", data));
             alert("There was a problem with your submission. Please try again.");
         }
     }).catch(error => {
-        console.error("Error:", error);
+        console.error("Network error:", error);
         alert("There was a problem with your submission. Please try again.");
     });
 }
