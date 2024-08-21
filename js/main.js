@@ -62,3 +62,36 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("Book").style.display = "block";
     document.getElementById("Book").classList.add("active");
 });
+
+
+
+document.getElementById("bookForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the default form submission
+    sendForm(this, "https://formspree.io/f/xqazyeob"); // Replace with your Formspree ID
+});
+
+document.getElementById("supportForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the default form submission
+    sendForm(this, "https://formspree.io/f/xqazyeob"); // Replace with your Formspree ID
+});
+
+function sendForm(form, url) {
+    var formData = new FormData(form);
+
+    fetch(url, {
+        method: "POST",
+        body: formData,
+        headers: {
+            "Accept": "application/json"
+        }
+    }).then(response => {
+        if (response.ok) {
+            window.location.href = "#contact"; // Redirect back to the contact page section
+        } else {
+            alert("There was a problem with your submission. Please try again.");
+        }
+    }).catch(error => {
+        console.error("Error:", error);
+        alert("There was a problem with your submission. Please try again.");
+    });
+}
