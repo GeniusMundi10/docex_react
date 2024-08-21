@@ -100,7 +100,7 @@ function sendForm(form, url) {
 // Modal form submission handling
 document.getElementById("demoForm").addEventListener("submit", function(event) {
     event.preventDefault(); // Prevent the default form submission
-    sendModalForm(this, "https://formspree.io/f/xqazyeob"); // Replace with your Formspree ID
+    sendModalForm(this, "https://formspree.io/f/xzzpjebv"); // Replace with your Formspree ID
 });
 // Function to send modal form data
 function sendModalForm(form, url) {
