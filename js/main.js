@@ -86,6 +86,7 @@ function sendForm(form, url) {
         }
     }).then(response => {
         if (response.ok) {
+            form.reset();
             window.location.href = "#contact"; // Redirect back to the contact page section
         } else {
             alert("There was a problem with your submission. Please try again.");
