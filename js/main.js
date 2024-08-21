@@ -38,26 +38,27 @@ document.querySelectorAll('.faq-question').forEach(item => {
 });
 
 function openForm(evt, formName) {
-    var i, tabcontent, tablinks;
-    
-    // Hide all forms
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
+    // Hide all tabcontent elements
+    var tabcontent = document.getElementsByClassName("tabcontent");
+    for (var i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
         tabcontent[i].classList.remove("active");
     }
-    
-    // Remove active class from all tabs
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
+
+    // Remove the active class from all tablinks
+    var tablinks = document.getElementsByClassName("tablink");
+    for (var i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active");
     }
-    
-    // Show the current form and add an active class to the clicked tab
+
+    // Show the selected tabcontent and add an "active" class to the clicked tab
     document.getElementById(formName).style.display = "block";
     document.getElementById(formName).classList.add("active");
-    evt.currentTarget.className += " active";
+    evt.currentTarget.classList.add("active");
 }
 
-// Default open the first tab
-document.getElementsByClassName('tablink')[0].click();
+// Set the default tab to display on page load
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("Book").style.display = "block";
+    document.getElementById("Book").classList.add("active");
+});
