@@ -96,3 +96,8 @@ function sendForm(form, url) {
         alert("There was a problem with your submission. Please try again.");
     });
 }
+// Modal form submission handling
+document.getElementById("demoForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the default form submission
+    sendForm(this, "https://formspree.io/f/xqazyeob"); // Replace with your Formspree ID
+});
