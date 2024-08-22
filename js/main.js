@@ -32,13 +32,13 @@ $(document).ready(function(){
             }
         }
     }
-    var navbarToggler = document.getElementById("navbar-toggler");
-    var navLinks = document.getElementById("nav-links");
+    var navbarToggler = document.querySelector(".navbar-toggler");
+    var navLinks = document.querySelector(".nav-links");
 
     if (navbarToggler && navLinks) {
-        navbarToggler.onclick = function() {
+        navbarToggler.addEventListener("click", function() {
             navLinks.classList.toggle("show");
-        };
+        });
     }
 });
 
