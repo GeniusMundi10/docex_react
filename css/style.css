@@ -950,3 +950,69 @@ section {
         margin-top: 20px;
     }
 }
+
+/* Auth Pages (Sign In and Register) Styles */
+
+/* Container for the form */
+.auth-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 100px auto; /* Centered vertically with margin */
+    text-align: center;
+}
+
+/* Heading Style */
+.auth-container h2 {
+    font-size: 2rem;
+    color: #0033cc; /* Match with your website's color scheme */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Form Inputs */
+.auth-container input[type="email"],
+.auth-container input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Submit Button */
+.auth-container button {
+    width: 100%;
+    padding: 15px;
+    background-color: #6c5ce7; /* Match the button color with your website */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.auth-container button:hover {
+    background-color: #574bb1; /* Darker shade on hover */
+}
+
+/* Link to the other auth page */
+.auth-container p {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #666;
+}
+
+.auth-container a {
+    color: #0033cc; /* Link color matching your website */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-container a:hover {
+    text-decoration: underline;
+}
