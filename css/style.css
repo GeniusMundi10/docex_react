@@ -1016,3 +1016,34 @@ section {
 .auth-container a:hover {
     text-decoration: underline;
 }
+
+
+/* Style for the DocEX Demo Button */
+.btn-register {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #8e2de2, #4a00e0); /* Purple Gradient */
+    color: white;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background 0.3s, box-shadow 0.3s;
+    margin-left: 10px; /* Add some space between buttons */
+}
+
+.btn-register:hover {
+    background: linear-gradient(135deg, #4a00e0, #8e2de2); /* Reverse Gradient on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the Sign In Button */
+.btn-signin {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-left: 10px; /* Add some space between buttons */
+}
+
+.btn-signin:hover {
+    text-decoration: underline;
+}
