@@ -88,6 +88,8 @@ a {
 
     .navbar .nav-links.show {
         display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .navbar .navbar-toggler {
