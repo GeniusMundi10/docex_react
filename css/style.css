@@ -93,8 +93,23 @@ a {
     .navbar .navbar-toggler {
         display: block;
     }
-}
 
+    .navbar .nav-links li {
+        width: 100%;
+        text-align: left;
+    }
+
+    .navbar .nav-links li a {
+        width: 100%;
+        display: block;
+        padding: 15px 0;
+        border-bottom: 1px solid #444;
+    }
+
+    .navbar .nav-links li a:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+}
 
 @keyframes gradientAnimation {
     0% { background-position: 0% 50%; }
@@ -379,13 +394,26 @@ section {
 /* Responsive Styles */
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row; /* Ensure row direction on mobile */
+        align-items: center;
+    }
+
+    .navbar .logo {
+        flex: 1; /* Ensure the logo stays on the left */
+    }
+
+    .navbar .navbar-toggler {
+        display: block;
+        z-index: 1002; /* Ensure it's above other elements */
+        position: relative;
+        right: 10px; /* Slight adjustment for better alignment */
+        margin-left: auto;
     }
 
     .navbar .nav-links {
         flex-direction: column;
         width: 100%;
+        top: 60px;
     }
 
     .navbar .nav-links li {
@@ -427,6 +455,13 @@ section {
         width: 100%;
         padding: 20px;
     }
+}
+
+/* Additional styling for improved functionality on mobile */
+.navbar .nav-links.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /* Contact Page Styles */
 /* General styling */
