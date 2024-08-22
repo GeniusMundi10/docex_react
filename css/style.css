@@ -1021,20 +1021,29 @@ section {
 /* Style for the DocEX Demo Button */
 .btn-register {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 25px;
     background: linear-gradient(135deg, #8e2de2, #4a00e0); /* Purple Gradient */
     color: white;
-    border-radius: 20px;
+    border-radius: 50px; /* More rounded corners */
     font-weight: bold;
-    transition: background 0.3s, box-shadow 0.3s;
-    margin-left: 10px; /* Add some space between buttons */
+    font-size: 16px; /* Slightly larger font */
+    transition: background 0.3s, box-shadow 0.3s, transform 0.3s; /* Add transform to the transition */
+    margin-left: 15px; /* Add some space between buttons */
+    text-transform: uppercase; /* Make text uppercase for emphasis */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
 }
 
 .btn-register:hover {
     background: linear-gradient(135deg, #4a00e0, #8e2de2); /* Reverse Gradient on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Larger shadow on hover */
+    transform: translateY(-3px); /* Slight lift effect on hover */
 }
 
+/* Ensure the button aligns properly in the navbar */
+.navbar .nav-links li a.btn-register {
+    display: inline-block;
+    padding: 10px 25px;
+}
 /* Style for the Sign In Button */
 .btn-signin {
     display: inline-block;
