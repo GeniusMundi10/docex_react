@@ -1022,7 +1022,7 @@ section {
 .btn-register {
     display: inline-block;
     padding: 10px 25px;
-    background: linear-gradient(135deg, #8e2de2, #4a00e0); /* Purple Gradient */
+    background: linear-gradient(135deg, #1e90ff, #00bfff); /* Blue Gradient */
     color: white;
     border-radius: 50px; /* More rounded corners */
     font-weight: bold;
