@@ -1,5 +1,3 @@
-// auth.js
-
 // Firebase configuration
 const firebaseConfig = {
     apiKey: "AIzaSyAlnN9dS1OXmc25BAdguCcu-6Xpn_su9k0",
@@ -38,8 +36,8 @@ document.getElementById("signinForm").addEventListener("submit", function(event)
 // Register user
 document.getElementById("registerForm").addEventListener("submit", function(event) {
     event.preventDefault();
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
+    const email = document.getElementById("regEmail").value; // Corrected ID
+    const password = document.getElementById("regPassword").value; // Corrected ID
 
     auth.createUserWithEmailAndPassword(email, password)
         .then((userCredential) => {
