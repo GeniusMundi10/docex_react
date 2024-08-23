@@ -57,8 +57,15 @@ document.addEventListener('DOMContentLoaded', function () {
                 .then((userCredential) => {
                     // Registration successful
                     console.log('User registered:', userCredential.user);
-                    // Redirect to a "registration success" page
-                    window.location.href = "registration-success.html";
+                    
+                    // Sign out the user immediately after registration
+                    auth.signOut().then(() => {
+                        console.log('User signed out after registration.');
+                        // Redirect to the registration success page
+                        window.location.href = "registration-success.html";
+                    }).catch((error) => {
+                        console.error('Sign out error after registration:', error);
+                    });
                 })
                 .catch((error) => {
                     console.error('Registration error:', error);
