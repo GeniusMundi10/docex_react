@@ -151,3 +151,9 @@ function sendModalForm(form, url) {
         alert("There was a problem with your submission. Please try again.");
     });
 }
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('try-docex-btn').addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent default action (following the link)
+        requireAuth();
+    });
+});
