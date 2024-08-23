@@ -52,12 +52,12 @@ document.addEventListener('DOMContentLoaded', function () {
             event.preventDefault();
             const email = document.getElementById("regEmail").value;
             const password = document.getElementById("regPassword").value;
-
+            console.log(`Attempting to register user with email: ${email}`);
             auth.createUserWithEmailAndPassword(email, password)
                 .then((userCredential) => {
                     // Registration successful
                     console.log('User registered:', userCredential.user);
-                    
+                    console.log(`Newly registered user UID: ${userCredential.user.uid}`);
                     // Sign out the user immediately after registration
                     auth.signOut().then(() => {
                         console.log('User signed out after registration.');
