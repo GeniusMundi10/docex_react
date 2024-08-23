@@ -70,26 +70,28 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // Authentication state observer
+// Authentication state observer
 auth.onAuthStateChanged((user) => {
     if (user) {
         console.log('User is signed in:', user);
-        // User is signed in, you can add code here to display user info or manage sessions
+        document.getElementById('signInBtn').style.display = 'none'; // Hide Sign In button
+        document.getElementById('signOutBtn').style.display = 'inline-block'; // Show Sign Out button
     } else {
         console.log('No user is signed in.');
-        // No user is signed in, redirect to sign-in page or display a message
+        document.getElementById('signInBtn').style.display = 'inline-block'; // Show Sign In button
+        document.getElementById('signOutBtn').style.display = 'none'; // Hide Sign Out button
     }
 });
 
-// Sign out function (optional)
-function signOutUser() {
+// Sign out user
+document.getElementById('signOutBtn').addEventListener('click', function() {
     auth.signOut().then(() => {
         console.log('User signed out.');
-        window.location.href = "sign-in.html"; // Redirect to sign-in page after signing out
+        window.location.href = "index.html"; // Redirect to the main page after signing out
     }).catch((error) => {
         console.error('Sign out error:', error);
     });
-}
-
+});
 // Protect pages that require authentication
 // Protect pages that require authentication
 function requireAuth() {
