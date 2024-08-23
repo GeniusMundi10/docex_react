@@ -1056,3 +1056,47 @@ section {
 .btn-signin:hover {
     text-decoration: underline;
 }
+
+/* Registration Success Page Styles */
+.success-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 100px auto; /* Centered vertically with margin */
+    text-align: center;
+}
+
+.success-container h2 {
+    font-size: 2rem;
+    color: #0033cc; /* Match with your website's color scheme */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.success-container p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.success-container a {
+    display: inline-block;
+    padding: 10px 25px;
+    background: linear-gradient(135deg, #1e90ff, #00bfff); /* Blue Gradient */
+    color: white;
+    border-radius: 50px; /* More rounded corners */
+    font-weight: bold;
+    font-size: 16px;
+    transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
+    margin-top: 20px; /* Add some space on top */
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.success-container a:hover {
+    background: linear-gradient(135deg, #4a00e0, #8e2de2); /* Reverse Gradient on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3px); /* Slight lift effect on hover */
+}
