@@ -81,10 +81,14 @@ function signOutUser() {
 }
 
 // Protect pages that require authentication
+// Protect pages that require authentication
 function requireAuth() {
     auth.onAuthStateChanged((user) => {
         if (!user) {
             window.location.href = "sign-in.html"; // Redirect to sign-in page if not authenticated
+        } else {
+            // If authenticated, proceed with the action
+            window.location.href = "https://invoiceextraction.streamlit.app/"; // Or any other action you want to trigger
         }
     });
 }
