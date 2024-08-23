@@ -46,14 +46,13 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Register user
-    // Register user
     const registerForm = document.getElementById("registerForm");
     if (registerForm) {
         registerForm.addEventListener("submit", function(event) {
             event.preventDefault();
             const email = document.getElementById("regEmail").value;
             const password = document.getElementById("regPassword").value;
-    
+
             auth.createUserWithEmailAndPassword(email, password)
                 .then((userCredential) => {
                     // Registration successful
@@ -67,42 +66,57 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
         });
     }
-});
 
-// Authentication state observer
-// Authentication state observer
-auth.onAuthStateChanged((user) => {
-    if (user) {
-        console.log('User is signed in:', user);
-        document.getElementById('signInBtn').style.display = 'none'; // Hide Sign In button
-        document.getElementById('signOutBtn').style.display = 'inline-block'; // Show Sign Out button
-    } else {
-        console.log('No user is signed in.');
-        document.getElementById('signInBtn').style.display = 'inline-block'; // Show Sign In button
-        document.getElementById('signOutBtn').style.display = 'none'; // Hide Sign Out button
-    }
-});
-
-// Sign out user
-document.getElementById('signOutBtn').addEventListener('click', function() {
-    auth.signOut().then(() => {
-        console.log('User signed out.');
-        window.location.href = "index.html"; // Redirect to the main page after signing out
-    }).catch((error) => {
-        console.error('Sign out error:', error);
-    });
-});
-// Protect pages that require authentication
-// Protect pages that require authentication
-function requireAuth() {
+    // Check if a user is signed in and update UI elements
     auth.onAuthStateChanged((user) => {
-        if (!user) {
-            window.location.href = "sign-in.html"; // Redirect to sign-in page if not authenticated
+        const signInBtn = document.getElementById('signInBtn');
+        const signOutBtn = document.getElementById('signOutBtn');
+        const getDemoBtn = document.getElementById('get-demo-btn');
+        
+        if (user) {
+            console.log('User is signed in:', user);
+            signInBtn.style.display = 'none'; // Hide Sign In button
+            signOutBtn.style.display = 'inline-block'; // Show Sign Out button
+            getDemoBtn.href = "https://invoiceextraction.streamlit.app/"; // Change Get Demo link to the tool page
         } else {
-            // If authenticated, proceed with the action
-            window.location.href = "https://invoiceextraction.streamlit.app/"; // Or any other action you want to trigger
+            console.log('No user is signed in.');
+            signInBtn.style.display = 'inline-block'; // Show Sign In button
+            signOutBtn.style.display = 'none'; // Hide Sign Out button
+            getDemoBtn.href = "register.html"; // Change Get Demo link to the registration page
         }
     });
-}
 
+    // Sign out user
+    const signOutBtn = document.getElementById('signOutBtn');
+    if (signOutBtn) {
+        signOutBtn.addEventListener('click', function() {
+            auth.signOut().then(() => {
+                console.log('User signed out.');
+                window.location.href = "index.html"; // Redirect to the main page after signing out
+            }).catch((error) => {
+                console.error('Sign out error:', error);
+            });
+        });
+    }
 
+    // Optional: Require authentication for certain actions/pages
+    function requireAuth() {
+        auth.onAuthStateChanged((user) => {
+            if (!user) {
+                window.location.href = "sign-in.html"; // Redirect to sign-in page if not authenticated
+            } else {
+                // If authenticated, proceed with the action
+                window.location.href = "https://invoiceextraction.streamlit.app/"; // Or any other action you want to trigger
+            }
+        });
+    }
+
+    // Attach requireAuth to specific actions, e.g., a button click
+    const tryDocExBtn = document.getElementById('try-docex-btn');
+    if (tryDocExBtn) {
+        tryDocExBtn.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent default action (following the link)
+            requireAuth();
+        });
+    }
+});
