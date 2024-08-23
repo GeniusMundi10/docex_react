@@ -89,5 +89,4 @@ function requireAuth() {
     });
 }
 
-// Call requireAuth() on protected pages (e.g., index.html, docex.html)
-requireAuth();
+
