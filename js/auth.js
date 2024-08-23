@@ -36,8 +36,8 @@ document.getElementById("signinForm").addEventListener("submit", function(event)
 // Register user
 document.getElementById("registerForm").addEventListener("submit", function(event) {
     event.preventDefault();
-    const email = document.getElementById("regEmail").value; // Corrected ID
-    const password = document.getElementById("regPassword").value; // Corrected ID
+    const email = document.getElementById("regEmail").value; // Ensure ID matches
+    const password = document.getElementById("regPassword").value; // Ensure ID matches
 
     auth.createUserWithEmailAndPassword(email, password)
         .then((userCredential) => {
