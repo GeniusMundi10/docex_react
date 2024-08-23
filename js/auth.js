@@ -15,40 +15,48 @@ firebase.initializeApp(firebaseConfig);
 // Get references to the auth service
 const auth = firebase.auth();
 
-// Sign-in user
-document.getElementById("signinForm").addEventListener("submit", function(event) {
-    event.preventDefault();
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
+document.addEventListener('DOMContentLoaded', function () {
+    // Sign-in user
+    const signinForm = document.getElementById("signinForm");
+    if (signinForm) {
+        signinForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
 
-    auth.signInWithEmailAndPassword(email, password)
-        .then((userCredential) => {
-            // Signed in successfully
-            console.log('User signed in:', userCredential.user);
-            window.location.href = "index.html"; // Redirect to the main page
-        })
-        .catch((error) => {
-            console.error('Login error:', error);
-            alert('Error: ' + error.message);
+            auth.signInWithEmailAndPassword(email, password)
+                .then((userCredential) => {
+                    // Signed in successfully
+                    console.log('User signed in:', userCredential.user);
+                    window.location.href = "index.html"; // Redirect to the main page
+                })
+                .catch((error) => {
+                    console.error('Login error:', error);
+                    alert('Error: ' + error.message);
+                });
         });
-});
+    }
 
-// Register user
-document.getElementById("registerForm").addEventListener("submit", function(event) {
-    event.preventDefault();
-    const email = document.getElementById("regEmail").value; // Ensure ID matches
-    const password = document.getElementById("regPassword").value; // Ensure ID matches
+    // Register user
+    const registerForm = document.getElementById("registerForm");
+    if (registerForm) {
+        registerForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+            const email = document.getElementById("regEmail").value; 
+            const password = document.getElementById("regPassword").value;
 
-    auth.createUserWithEmailAndPassword(email, password)
-        .then((userCredential) => {
-            // Registered successfully
-            console.log('User registered:', userCredential.user);
-            window.location.href = "index.html"; // Redirect to the main page
-        })
-        .catch((error) => {
-            console.error('Registration error:', error);
-            alert('Error: ' + error.message);
+            auth.createUserWithEmailAndPassword(email, password)
+                .then((userCredential) => {
+                    // Registered successfully
+                    console.log('User registered:', userCredential.user);
+                    window.location.href = "index.html"; // Redirect to the main page
+                })
+                .catch((error) => {
+                    console.error('Registration error:', error);
+                    alert('Error: ' + error.message);
+                });
         });
+    }
 });
 
 // Authentication state observer
