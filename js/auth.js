@@ -38,18 +38,20 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Register user
+    // Register user
     const registerForm = document.getElementById("registerForm");
     if (registerForm) {
         registerForm.addEventListener("submit", function(event) {
             event.preventDefault();
-            const email = document.getElementById("regEmail").value; 
+            const email = document.getElementById("regEmail").value;
             const password = document.getElementById("regPassword").value;
-
+    
             auth.createUserWithEmailAndPassword(email, password)
                 .then((userCredential) => {
-                    // Registered successfully
+                    // Registration successful
                     console.log('User registered:', userCredential.user);
-                    window.location.href = "index.html"; // Redirect to the main page
+                    // Redirect to a "registration success" page
+                    window.location.href = "registration-success.html";
                 })
                 .catch((error) => {
                     console.error('Registration error:', error);
