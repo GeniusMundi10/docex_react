@@ -32,7 +32,15 @@ document.addEventListener('DOMContentLoaded', function () {
                 })
                 .catch((error) => {
                     console.error('Login error:', error);
-                    alert('Error: ' + error.message);
+                    if (error.code === 'auth/wrong-password') {
+                        alert('Incorrect password. Please try again.');
+                    } else if (error.code === 'auth/user-not-found') {
+                        alert('No account found with this email. Please register first.');
+                    } else if (error.code === 'auth/invalid-email') {
+                        alert('The email address is badly formatted.');
+                    } else {
+                        alert('Error: ' + error.message);
+                    }
                 });
         });
     }
