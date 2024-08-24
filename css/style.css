@@ -136,12 +136,12 @@ a {
 
 
 .hero-text {
-    flex: 0 0 55%;
+    flex: 0 0 60%;
     padding-right: 2rem;
 }
 
 .hero-video {
-    flex: 0 0 45%;   
+    flex: 0 0 40%;   
 }
 
 .hero-video video {
