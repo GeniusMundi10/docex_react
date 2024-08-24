@@ -157,3 +157,12 @@ document.addEventListener('DOMContentLoaded', function () {
         requireAuth();
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const animationContainer = document.getElementById('document-processor-animation');
+  if (animationContainer) {
+    const animation = createDocumentProcessorAnimation();
+    animationContainer.appendChild(animation.element);
+    animation.start();
+  }
+});
