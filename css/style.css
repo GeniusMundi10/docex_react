@@ -120,37 +120,34 @@ a {
 }
 /* Hero section styles */
 .hero-section {
-    background-color: #1e1e2f;
-    color: white;
-    padding: 2rem;
-    min-height: 80vh;
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  padding: 4rem 2rem;
+  background-color: #1e1e2f;
 }
 
 .hero-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
+
 .hero-text {
-    flex: 1;
-    max-width: 50%;
+    flex: 0 0 55%;
     padding-right: 2rem;
 }
 
 .hero-video {
-    flex: 1;
-    max-width: 50%;
+    flex: 0 0 45%;   
 }
 
 .hero-video video {
     width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
 }
 
 /* Existing button styles */
