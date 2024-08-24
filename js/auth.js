@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function () {
     auth.onAuthStateChanged((user) => {
         const signInBtn = document.getElementById('signInBtn');
         const signOutBtn = document.getElementById('signOutBtn');
-        const getDemoBtn = document.getElementById('get-demo-btn');
+        const getDemoBtn = document.getElementById('"btn btn-primary"');
         
         if (user) {
             console.log('User is signed in:', user);
