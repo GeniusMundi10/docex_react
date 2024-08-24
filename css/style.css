@@ -192,7 +192,8 @@ a {
 
 @media (max-width: 768px) {
   .hero-section {
-    padding: 4rem 2rem;
+    padding: 6rem 1rem 4rem; /* Increased top padding */
+    min-height: auto; /* Remove fixed height on mobile */
   }
 
   .hero-content {
@@ -207,15 +208,27 @@ a {
   }
 
   .hero-text h1 {
-    font-size: 2.5rem;
+    font-size: 2.5rem; /* Slightly smaller font size */
+    margin-top: 2rem; /* Add some space at the top */
+  }
+
+  .hero-text p {
+    font-size: 1rem; /* Smaller font size for paragraph */
   }
 
   .hero-video {
     flex: 0 0 100%;
+    margin-top: 2rem; /* Add space above the video/animation */
   }
 
   .hero-buttons {
     justify-content: center;
+    flex-direction: column; /* Stack buttons vertically on very small screens */
+    gap: 1rem;
+  }
+
+  .btn {
+    width: 100%; /* Make buttons full width on mobile */
   }
 }
 
