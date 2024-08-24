@@ -141,32 +141,31 @@ a {
     padding-right: 2rem;
 }
 
-.hero-text h1 {
-    font-size: 3.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
+.hero-video {
+    flex: 1;
+    max-width: 50%;
 }
 
-.hero-text p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+.hero-video video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.hero-buttons {
-    display: flex;
-    gap: 1rem;
-}
-
+/* Existing button styles */
 .btn {
-    padding: 0.75rem 1.5rem;
-    border-radius: 0.5rem;
-    font-weight: bold;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
     text-decoration: none;
+    font-weight: bold;
     transition: background-color 0.3s;
 }
 
 .btn-primary {
-    background-color: #8a2be2;
+    background-color: #6c5ce7;
     color: white;
 }
 
@@ -175,11 +174,21 @@ a {
     color: #1e1e2f;
 }
 
-#idp-animation-root {
-    flex: 1;
-    max-width: 50%;
-}
+/* Responsive design */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+    }
 
+    .hero-text, .hero-video {
+        max-width: 100%;
+        padding-right: 0;
+    }
+
+    .hero-video {
+        margin-top: 2rem;
+    }
+}
 
 /* Section Styles */
 section {
