@@ -1316,17 +1316,20 @@ section {
     padding: 0 20px;
 }
 
-.pricing-section h2 {
-    font-size: 2.5rem;
+.pricing-header {
     text-align: center;
+    margin-bottom: 40px;
+}
+
+.pricing-header h2 {
+    font-size: 2.5rem;
     margin-bottom: 10px;
+    line-height: 1.2;
 }
 
 .subtitle {
-    text-align: center;
     font-size: 1.1rem;
     color: #666;
-    margin-bottom: 40px;
 }
 
 .pricing-grid {
@@ -1361,7 +1364,7 @@ section {
     font-size: 0.9rem;
     color: #666;
     margin-bottom: 15px;
-    min-height: 40px;
+    min-height: 60px;
 }
 
 .btn-quote {
@@ -1403,13 +1406,6 @@ section {
     color: #1a73e8;
     position: absolute;
     left: 0;
-}
-
-.and-more {
-    margin-top: auto;
-    font-style: italic;
-    color: #666;
-    font-size: 0.9rem;
 }
 
 .recommended {
