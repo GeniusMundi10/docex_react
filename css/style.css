@@ -316,15 +316,25 @@ section {
 
 .btn-book-demo {
     display: inline-block;
-    color: #ffffff;
-    font-size: 1.1rem;
+    background-color: #ffffff;
+    color: #2851a3;
+    font-size: 1rem;
     font-weight: bold;
     text-decoration: none;
-    transition: opacity 0.3s;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .btn-book-demo:hover {
-    opacity: 0.8;
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+.btn-book-demo::after {
+    content: " →";
+    font-size: 1.2em;
+    vertical-align: middle;
 }
 
 @media (max-width: 768px) {
@@ -339,6 +349,11 @@ section {
     
     .demo-section p {
         font-size: 1rem;
+    }
+
+    .btn-book-demo {
+        font-size: 0.9rem;
+        padding: 8px 16px;
     }
 }
 
