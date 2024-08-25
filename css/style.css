@@ -911,9 +911,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-    flex-wrap: nowrap;
+    gap: 20px;
 }
 
 .ai-models-logos {
