@@ -1320,22 +1320,19 @@ section {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 10px;
-    line-height: 1.2;
 }
 
 .subtitle {
     text-align: center;
     font-size: 1.1rem;
     color: #666;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .pricing-grid {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    overflow-x: auto;
-    padding-bottom: 20px;
 }
 
 .pricing-card {
@@ -1346,7 +1343,7 @@ section {
     display: flex;
     flex-direction: column;
     flex: 1;
-    min-width: 250px;
+    max-width: calc(25% - 15px);
 }
 
 .pricing-card h3 {
@@ -1364,6 +1361,7 @@ section {
     font-size: 0.9rem;
     color: #666;
     margin-bottom: 15px;
+    min-height: 40px;
 }
 
 .btn-quote {
@@ -1395,7 +1393,7 @@ section {
 
 .pricing-card li {
     margin-bottom: 8px;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     position: relative;
     padding-left: 15px;
 }
@@ -1433,11 +1431,17 @@ section {
 
 @media (max-width: 1024px) {
     .pricing-grid {
-        flex-wrap: nowrap;
-        justify-content: flex-start;
+        flex-wrap: wrap;
     }
     
     .pricing-card {
-        flex: 0 0 auto;
+        max-width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .pricing-card {
+        max-width: 100%;
     }
 }
