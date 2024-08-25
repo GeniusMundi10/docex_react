@@ -404,17 +404,19 @@ section {
 .modal-content {
     display: flex;
     background: #fff;
-    width: 90%;
-    max-width: 800px;
+    width: 95%;
+    max-width: 1200px;
+    height: 80vh;
+    max-height: 700px;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .modal-left {
-    flex: 1;
-    padding: 40px;
-    background: linear-gradient(135deg, #3a0647, #1C0321);
+    flex: 0 0 45%;
+    padding: 60px;
+    background: #3a0647;
     color: white;
     display: flex;
     flex-direction: column;
@@ -422,73 +424,85 @@ section {
 }
 
 .modal-logo {
-    width: 100px;
-    margin-bottom: 20px;
+    width: 120px;
+    margin-bottom: 30px;
 }
 
 .modal-left h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 20px;
+    line-height: 1.2;
 }
 
 .modal-left p {
-    font-size: 1rem;
-    opacity: 0.8;
+    font-size: 1.1rem;
+    opacity: 0.9;
+    line-height: 1.5;
 }
 
 .modal-right {
-    flex: 1;
-    padding: 40px;
+    flex: 0 0 55%;
+    padding: 60px;
     background: white;
+    overflow-y: auto;
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
 }
 
 .contact-form input,
 .contact-form select {
-    padding: 10px;
+    padding: 15px;
     border: 1px solid #e0e0e0;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 16px;
+    width: 100%;
 }
 
 .contact-form button {
-    padding: 10px;
-    background-color: #3a0647;
+    padding: 15px;
+    background-color: #7c5cff;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
     transition: background-color 0.3s;
 }
 
 .contact-form button:hover {
-    background-color: #2a0433;
+    background-color: #6a4dff;
 }
 
 .privacy-text {
-    font-size: 12px;
+    font-size: 14px;
     color: #666;
-    margin-top: 15px;
+    margin-top: 20px;
+    line-height: 1.4;
 }
 
 .close {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 24px;
+    top: 20px;
+    right: 20px;
+    font-size: 28px;
     color: white;
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .modal-content {
         flex-direction: column;
+        height: auto;
+        max-height: 90vh;
+    }
+    .modal-left, .modal-right {
+        flex: none;
+        width: 100%;
+        padding: 40px;
     }
 }
 
