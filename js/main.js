@@ -13,7 +13,7 @@ $(document).ready(function(){
     var modal = document.getElementById("demoModal");
     if (modal) {
         modal.style.display = "none"; 
-        var openModalBtns = document.querySelectorAll("#open-modal, #hero-book-demo");
+        var openModalBtns = document.querySelectorAll("#open-modal, #hero-book-demo, #get-a-quote");
         var span = document.getElementsByClassName("close")[0];
 
         openModalBtns.forEach(function(btn) {
