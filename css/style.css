@@ -1299,3 +1299,127 @@ section {
         font-size: 1rem;
     }
 }
+.pricing-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.pricing-section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.pricing-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.2rem;
+    color: #1a73e8;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.btn-quote {
+    background-color: #1a73e8;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+
+.btn-quote:hover {
+    background-color: #1557b0;
+}
+
+.pricing-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.pricing-card ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.pricing-card li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.pricing-card li::before {
+    content: "•";
+    color: #1a73e8;
+    position: absolute;
+    left: 0;
+}
+
+.and-more {
+    margin-top: auto;
+    font-style: italic;
+    color: #666;
+}
+
+.recommended {
+    border: 2px solid #1a73e8;
+    position: relative;
+}
+
+.tag {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1a73e8;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+}
