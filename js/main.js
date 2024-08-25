@@ -13,22 +13,22 @@ $(document).ready(function(){
     var modal = document.getElementById("demoModal");
     if (modal) {
         modal.style.display = "none"; 
-        var btn = document.getElementById("open-modal");
+        var openModalBtns = document.querySelectorAll("#open-modal, #hero-book-demo");
         var span = document.getElementsByClassName("close")[0];
 
-        if (btn && span) {
+        openModalBtns.forEach(function(btn) {
             btn.onclick = function() {
                 modal.style.display = "flex";
             }
+        });
 
-            span.onclick = function() {
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
                 modal.style.display = "none";
-            }
-
-            window.onclick = function(event) {
-                if (event.target == modal) {
-                    modal.style.display = "none";
-                }
             }
         }
     }
