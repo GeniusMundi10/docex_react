@@ -939,6 +939,7 @@ section {
     font-size: 2rem;
     color: #0033cc;
     margin-bottom: 15px;
+    font-weight: bold;
 }
 
 .ai-models-text p {
