@@ -1305,10 +1305,13 @@ section {
     background-color: #f8f9fa;
 }
 
-.container {
+.pricing-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    display: flex;
+    flex-direction: column; /* Ensure the content inside is stacked vertically */
+    align-items: center; /* Center-align content horizontally */
 }
 
 .pricing-header {
