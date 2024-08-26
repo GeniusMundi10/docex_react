@@ -729,9 +729,81 @@ section {
 }
 
 .document-types label {
-    display: block;
-    font-size: 16px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
     cursor: pointer;
+    background-color: #f8f8f8;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    padding: 5px 15px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.document-types label:hover {
+    background-color: #f0f0f0;
+    border-color: #d0d0d0;
+}
+
+.document-types input[type="checkbox"] {
+    margin-right: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #999;
+    border-radius: 3px;
+    outline: none;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.document-types input[type="checkbox"]:checked {
+    background-color: #4a90e2;
+    border-color: #4a90e2;
+}
+
+.document-types input[type="checkbox"]:checked::before {
+    content: '\2713';
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+/* Style for the "Documents Processed/Month" input */
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Style for the "Please describe your use case" textarea */
+textarea {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Additional styles for form layout */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
 /* Textarea */
