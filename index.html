@@ -408,7 +408,7 @@
     <script src="https://unpkg.com/lucide@0.263.1/dist/umd/lucide.min.js"></script>
     <script>
       // Make lucide available globally
-      window.lucideIcons = lucide.icons;
+      window.LucideIcons = lucide.createIcons;
     </script>
     <script type="text/babel" src="components/IntelligentDocumentProcessor.js"></script>
     <script type="text/babel">
@@ -419,6 +419,7 @@
         } else {
           console.error('Hero animation container not found');
         }
+        window.LucideIcons();
       });
     </script>
 
