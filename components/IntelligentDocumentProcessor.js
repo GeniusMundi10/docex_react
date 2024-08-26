@@ -207,4 +207,4 @@ const IntelligentDocumentProcessor = () => {
   );
 };
 
-export default IntelligentDocumentProcessor;
+
