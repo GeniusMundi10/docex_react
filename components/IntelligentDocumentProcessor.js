@@ -1,5 +1,5 @@
 const { useState, useEffect } = React;
-const { FileText, Database, ArrowRight, Cpu } = lucide;
+const { FileText, Database, ArrowRight, Cpu } = window.lucideIcons;
 
 
 const IntelligentDocumentProcessor = () => {
