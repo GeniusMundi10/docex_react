@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { FileText, Database, ArrowRight, Cpu } from 'lucide-react';
+const { useState, useEffect } = React;
+const { FileText, Database, ArrowRight, Cpu } = lucide;
+
 
 const IntelligentDocumentProcessor = () => {
   const [step, setStep] = useState(0);
@@ -206,5 +207,5 @@ const IntelligentDocumentProcessor = () => {
     </div>
   );
 };
-
-
+// Make the component available globally
+window.IntelligentDocumentProcessor = IntelligentDocumentProcessor;
