@@ -78,32 +78,41 @@
                     <option value="Argentina">Argentina</option>
                     <option value="Turkey">Turkey</option>
                 </select>
-                <input type="text" name="Documents Processed/Month" placeholder="Documents Processed/Month" required>
-                <label>Document Types*</label>
-                <div class="document-types">
-                    <label><input type="checkbox" name="Document Types" value="Airway Bills"> Airway Bills</label>
-                    <label><input type="checkbox" name="Document Types" value="Bank Statements"> Bank Statements</label>
-                    <label><input type="checkbox" name="Document Types" value="Bills of Lading"> Bills of Lading</label>
-                    <label><input type="checkbox" name="Document Types" value="Business Cards"> Business Cards</label>
-                    <label><input type="checkbox" name="Document Types" value="Contracts"> Contracts</label>
-                    <label><input type="checkbox" name="Document Types" value="Customs Forms"> Customs Forms</label>
-                    <label><input type="checkbox" name="Document Types" value="Driver's Licenses"> Driver's Licenses</label>
-                    <label><input type="checkbox" name="Document Types" value="Expense Documents"> Expense Documents</label>
-                    <label><input type="checkbox" name="Document Types" value="GewAI (DE) Documents"> GewAI (DE) Documents</label>
-                    <label><input type="checkbox" name="Document Types" value="Identity Documents"> Identity Documents</label>
-                    <label><input type="checkbox" name="Document Types" value="Invoices"> Invoices</label>
-                    <label><input type="checkbox" name="Document Types" value="Mortgage Statements"> Mortgage Statements</label>
-                    <label><input type="checkbox" name="Document Types" value="Order Forms"> Order Forms</label>
-                    <label><input type="checkbox" name="Document Types" value="Pay Slips"> Pay Slips</label>
-                    <label><input type="checkbox" name="Document Types" value="Purchase Orders"> Purchase Orders</label>
-                    <label><input type="checkbox" name="Document Types" value="Receipts"> Receipts</label>
-                    <label><input type="checkbox" name="Document Types" value="Retirement/Investment Statements"> Retirement/Investment Statements</label>
-                    <label><input type="checkbox" name="Document Types" value="Shipping Labels"> Shipping Labels</label>
-                    <label><input type="checkbox" name="Document Types" value="Tax Documents"> Tax Documents</label>
-                    <label><input type="checkbox" name="Document Types" value="Utility Bills"> Utility Bills</label>
-                    <label><input type="checkbox" name="Document Types" value="Other"> Other</label>
+                <div class="form-group">
+                    <label for="documents-per-month">Documents Processed/Month</label>
+                    <input type="text" id="documents-per-month" name="Documents Processed/Month" placeholder="Documents Processed/Month" required>
                 </div>
-                <textarea name="Use Case" placeholder="Please describe your use case*" required></textarea>
+                
+                <div class="form-group">
+                    <label>Document Types*</label>
+                    <div class="document-types">
+                        <label><input type="checkbox" name="Document Types" value="Airway Bills"> Airway Bills</label>
+                        <label><input type="checkbox" name="Document Types" value="Bank Statements"> Bank Statements</label>
+                        <label><input type="checkbox" name="Document Types" value="Bills of Lading"> Bills of Lading</label>
+                        <label><input type="checkbox" name="Document Types" value="Business Cards"> Business Cards</label>
+                        <label><input type="checkbox" name="Document Types" value="Contracts"> Contracts</label>
+                        <label><input type="checkbox" name="Document Types" value="Customs Forms"> Customs Forms</label>
+                        <label><input type="checkbox" name="Document Types" value="Driver's Licenses"> Driver's Licenses</label>
+                        <label><input type="checkbox" name="Document Types" value="Expense Documents"> Expense Documents</label>
+                        <label><input type="checkbox" name="Document Types" value="GewAI (DE) Documents"> GewAI (DE) Documents</label>
+                        <label><input type="checkbox" name="Document Types" value="Identity Documents"> Identity Documents</label>
+                        <label><input type="checkbox" name="Document Types" value="Invoices"> Invoices</label>
+                        <label><input type="checkbox" name="Document Types" value="Mortgage Statements"> Mortgage Statements</label>
+                        <label><input type="checkbox" name="Document Types" value="Order Forms"> Order Forms</label>
+                        <label><input type="checkbox" name="Document Types" value="Pay Slips"> Pay Slips</label>
+                        <label><input type="checkbox" name="Document Types" value="Purchase Orders"> Purchase Orders</label>
+                        <label><input type="checkbox" name="Document Types" value="Receipts"> Receipts</label>
+                        <label><input type="checkbox" name="Document Types" value="Retirement/Investment Statements"> Retirement/Investment Statements</label>
+                        <label><input type="checkbox" name="Document Types" value="Shipping Labels"> Shipping Labels</label>
+                        <label><input type="checkbox" name="Document Types" value="Tax Documents"> Tax Documents</label>
+                        <label><input type="checkbox" name="Document Types" value="Utility Bills"> Utility Bills</label>
+                        <label><input type="checkbox" name="Document Types" value="Other"> Other</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="use-case">Please describe your use case*</label>
+                    <textarea id="use-case" name="Use Case" placeholder="Please describe your use case*" required></textarea>
+                </div>
                 <p class="privacy-text">
                     By clicking "Submit," you acknowledge that your data will be processed in accordance with DocEX's privacy policy. You can unsubscribe from these communications at any time. For more information on how to unsubscribe, our privacy practices, and how we are committed to protecting and respecting your privacy, please review our <a href="privacy.html" target="_blank">Privacy Policy</a>.
                 </p>
