@@ -1,5 +1,5 @@
 const { useState, useEffect } = React;
-const { FileText, Database, ArrowRight, Cpu } = window.lucideIcons;
+
 
 
 const IntelligentDocumentProcessor = () => {
@@ -178,11 +178,11 @@ const IntelligentDocumentProcessor = () => {
       <div className="w-full max-w-6xl bg-white rounded-lg shadow-lg p-8">
         <h1 className="text-3xl font-bold mb-4">Intelligent Document Processor</h1>
         <div className="flex justify-between items-center mb-4">
-          <FileText className={`w-12 h-12 ${step >= 0 ? 'text-purple-500' : 'text-gray-300'}`} />
-          <ArrowRight className={`w-12 h-12 ${step >= 1 ? 'text-blue-500' : 'text-gray-300'}`} />
-          <Cpu className={`w-12 h-12 ${step >= 2 ? 'text-green-500' : 'text-gray-300'}`} />
-          <ArrowRight className={`w-12 h-12 ${step >= 3 ? 'text-blue-500' : 'text-gray-300'}`} />
-          <Database className={`w-12 h-12 ${step >= 4 ? 'text-green-500' : 'text-gray-300'}`} />
+          <i data-lucide="file-text" className={`w-12 h-12 ${step >= 0 ? 'text-purple-500' : 'text-gray-300'}`}></i>
+          <i data-lucide="arrow-right" className={`w-12 h-12 ${step >= 1 ? 'text-blue-500' : 'text-gray-300'}`}></i>
+          <i data-lucide="cpu" className={`w-12 h-12 ${step >= 2 ? 'text-green-500' : 'text-gray-300'}`}></i>
+          <i data-lucide="arrow-right" className={`w-12 h-12 ${step >= 3 ? 'text-blue-500' : 'text-gray-300'}`}></i>
+          <i data-lucide="database" className={`w-12 h-12 ${step >= 4 ? 'text-green-500' : 'text-gray-300'}`}></i>
         </div>
         <div className="h-2 bg-gray-200 rounded mb-8">
           <div 
