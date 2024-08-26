@@ -1,14 +1,13 @@
 {
-     "name": "docex-website",
-     "version": "1.0.0",
-     "description": "DocEX AI Website",
-     "main": "index.html",
-     "scripts": {
-       "build": "echo 'No build step required'"
-     },
-     "dependencies": {
-       "react": "^17.0.2",
-       "react-dom": "^17.0.2",
-       "lucide-react": "^0.263.1"
-     }
-   }
+  "name": "docex-website",
+  "version": "1.0.0",
+  "description": "DocEX AI Website",
+  "scripts": {
+    "build": "mkdir -p public && cp -R *.html css js images components public/ && cp package.json public/"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "lucide-react": "^0.263.1"
+  }
+}
