@@ -1,6 +1,5 @@
 const { useState, useEffect } = React;
-
-
+const { FiFileText, FiDatabase, FiArrowRight, FiCpu } = ReactIcons.fi;
 
 const IntelligentDocumentProcessor = () => {
   const [step, setStep] = useState(0);
@@ -178,11 +177,11 @@ const IntelligentDocumentProcessor = () => {
       <div className="w-full max-w-6xl bg-white rounded-lg shadow-lg p-8">
         <h1 className="text-3xl font-bold mb-4">Intelligent Document Processor</h1>
         <div className="flex justify-between items-center mb-4">
-          <i data-lucide="file-text" className={`w-12 h-12 ${step >= 0 ? 'text-purple-500' : 'text-gray-300'}`}></i>
-          <i data-lucide="arrow-right" className={`w-12 h-12 ${step >= 1 ? 'text-blue-500' : 'text-gray-300'}`}></i>
-          <i data-lucide="cpu" className={`w-12 h-12 ${step >= 2 ? 'text-green-500' : 'text-gray-300'}`}></i>
-          <i data-lucide="arrow-right" className={`w-12 h-12 ${step >= 3 ? 'text-blue-500' : 'text-gray-300'}`}></i>
-          <i data-lucide="database" className={`w-12 h-12 ${step >= 4 ? 'text-green-500' : 'text-gray-300'}`}></i>
+          <FiFileText className={`w-12 h-12 ${step >= 0 ? 'text-purple-500' : 'text-gray-300'}`} />
+          <FiArrowRight className={`w-12 h-12 ${step >= 1 ? 'text-blue-500' : 'text-gray-300'}`} />
+          <FiCpu className={`w-12 h-12 ${step >= 2 ? 'text-green-500' : 'text-gray-300'}`} />
+          <FiArrowRight className={`w-12 h-12 ${step >= 3 ? 'text-blue-500' : 'text-gray-300'}`} />
+          <FiDatabase className={`w-12 h-12 ${step >= 4 ? 'text-green-500' : 'text-gray-300'}`} />
         </div>
         <div className="h-2 bg-gray-200 rounded mb-8">
           <div 
