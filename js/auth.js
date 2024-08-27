@@ -44,7 +44,25 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
         });
     }
-
+    const forgotPasswordLink = document.getElementById("forgotPassword");
+    if (forgotPasswordLink) {
+        forgotPasswordLink.addEventListener("click", function(event) {
+            event.preventDefault();
+            const email = document.getElementById("email").value;
+            if (email) {
+                auth.sendPasswordResetEmail(email)
+                    .then(() => {
+                        alert("Password reset email sent. Please check your inbox.");
+                    })
+                    .catch((error) => {
+                        console.error('Password reset error:', error);
+                        alert('Error: ' + error.message);
+                    });
+            } else {
+                alert("Please enter your email address in the email field.");
+            }
+        });
+    }
     // Register user
     const registerForm = document.getElementById("registerForm");
     if (registerForm) {
