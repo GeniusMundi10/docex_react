@@ -258,8 +258,12 @@ section {
     margin: 0 auto;
 }
 .feature {
-    padding: 20px
+    padding: 20px;
     text-align: center;
+    display: flex; /* Added */
+    flex-direction: column; /* Added */
+    align-items: center; /* Added */
+    justify-content: center; /* Added */
 }
 
 .feature video {
@@ -267,11 +271,13 @@ section {
     max-width: 600px; /* Ensure video doesn't exceed a reasonable size */
     height: auto; /* Maintain aspect ratio */
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 20px
+    display: block;
 }
 
 .feature-content {
     padding: 10px;
+    text-align: center;
 }
 
 .feature-content h3 {
