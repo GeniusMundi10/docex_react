@@ -258,7 +258,7 @@ section {
 }
 
 .feature {
-    display: flex;
+    display: flex !important; /* Force flex display */
     align-items: center;
     justify-content: space-between;
     padding: 20px;
@@ -289,13 +289,13 @@ section {
     color: #666;
 }
 
-/* Slick slider specific adjustments */
+/* Slick slider overrides */
 .slick-slide {
-    margin: 0 10px;
+    display: flex !important;
 }
 
-.slick-list {
-    margin: 0 -10px;
+.slick-slide > div {
+    width: 100%;
 }
 
 /* Responsive adjustments */
