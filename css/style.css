@@ -262,8 +262,10 @@ section {
     text-align: center;
 }
 
-.feature img {
-    max-width: 100%;
+.feature video {
+    width: 100%;
+    max-width: 600px; /* Ensure video doesn't exceed a reasonable size */
+    height: auto; /* Maintain aspect ratio */
     border-radius: 10px;
     margin-bottom: 20px;
 }
