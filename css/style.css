@@ -265,6 +265,7 @@ features {
     justify-content: space-between;
     padding: 20px;
     text-align: left;
+    flex-wrap: nowrap;
 }
 
 .feature video {
