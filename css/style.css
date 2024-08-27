@@ -257,27 +257,27 @@ section {
     width: 80%;
     margin: 0 auto;
 }
+
 .feature {
+    display: flex; /* Changed from column to row */
+    flex-direction: row; /* Align items side by side */
+    align-items: center; /* Vertically center both the video and text */
+    justify-content: center; /* Horizontally center the container */
     padding: 20px;
-    text-align: center;
-    display: flex; /* Added */
-    flex-direction: column; /* Added */
-    align-items: center; /* Added */
-    justify-content: center; /* Added */
+    text-align: left; /* Align text to the left within its container */
 }
 
 .feature video {
-    width: 100%;
+    width: 50%; /* Adjust the width as needed */
     max-width: 600px; /* Ensure video doesn't exceed a reasonable size */
     height: auto; /* Maintain aspect ratio */
     border-radius: 10px;
-    margin-bottom: 20px
-    display: block;
+    margin-right: 20px; /* Space between video and text */
 }
 
 .feature-content {
+    width: 50%; /* Ensure the text takes up the remaining space */
     padding: 10px;
-    text-align: center;
 }
 
 .feature-content h3 {
