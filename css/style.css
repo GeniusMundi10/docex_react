@@ -1753,3 +1753,94 @@ textarea {
         font-size: 1.5rem;
     }
 }
+/* Use Cases Section Styles */
+.use-cases {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.use-cases h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.filter-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+#industry-filter,
+#search-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#industry-filter {
+    width: 200px;
+}
+
+#search-input {
+    width: 300px;
+}
+
+.use-cases-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.use-case-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.use-case-card:hover {
+    transform: translateY(-5px);
+}
+
+.use-case-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.use-case-card h3 {
+    padding: 15px;
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.learn-more {
+    display: block;
+    padding: 10px 15px;
+    background-color: #f0f0f0;
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more:hover {
+    background-color: #e0e0e0;
+}
+
+@media (max-width: 768px) {
+    .filter-container {
+        flex-direction: column;
+    }
+
+    #industry-filter,
+    #search-input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
